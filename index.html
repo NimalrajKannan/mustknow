@@ -191,7 +191,7 @@
             <a class="nav-link txtcolor" href="#">Exams</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link txtcolor" href="#">Scholarship</a>
+            <a class="nav-link txtcolor" href="./Scholarship.html" target="_self">Scholarship</a>
           </li>
           <li class="nav-item">
             <a class="nav-link txtcolor" href="./about.html" target="_parent">About</a>
@@ -684,7 +684,7 @@
             <div class="mb-2">
               <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+            <button type="submit" class="btn btn-primary w-100"><a>Subscribe</a></button>
           </form>
 
           <script>
@@ -964,6 +964,14 @@
       }
     }
   </style>
+
+    <script>
+    document.addEventListener('copy', function (e) {
+      e.clipboardData.setData('text/plain', 'Please give credit when sharing this content.\n\n' + window.getSelection());
+      e.preventDefault();
+      alert('Please give credit to our website when sharing this content.');
+    });
+  </script>
 
 
 
