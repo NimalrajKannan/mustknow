@@ -1,0 +1,1298 @@
+  <!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mustknowcollege</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Css -->
+
+  <link rel="stylesheet" href="./assets/css/boostrap.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <style>
+    :root {
+      --pry-clr: #10263D;
+      --sec-clr: #001b36;
+      --gray-clr: #464646;
+      --perfect-blue: #0f457f;
+    }
+
+    .icon-img {
+      width: 50% !important;
+    }
+     .card {
+      background-color: var(--pry-clr);
+      color: #ffff;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+
+
+  <div id="header"></div>
+
+
+  <!-- <div class="container owm-margin">
+        <div class="row">
+            <div class="col">
+              
+                <h5 class="text-center" style="color: #FF8C42;">Shape Your Future with Must Know Colleges!! (Career & Indian College Guidance | Study Abroad)</h5>
+                <p class="text-center text-clr "  >What to Study after 12th? A Comprehensive Guide to choose the Best Courses after 12th</p>
+            </div>
+        </div>
+      </div> -->
+
+  <!-- hero -->
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      display: flex;
+      background-image: url(./assets/new-img/enterexam-bg-banner.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3 text-capitalize">
+      <h3>Discover architecture & design for hands on carrer traning</h3>
+      <p>
+        Explore vocational programs and practical education options that lead directly to employment in high-demand
+        fields
+      </p>
+    </div>
+  </section>
+
+  <!-- hero end-->
+
+
+
+
+
+  <!-- architecture & design boxes -->
+
+
+  <style>
+    .exam-card-box {
+      display: flex;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+
+    .exam-card {
+      background-color: var(--pry-clr, #0d6efd);
+      /* Fallback to blue if --pry-clr is undefined */
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 1rem;
+      padding: 20px;
+      color: white;
+    }
+
+    .exam-title {
+      font-weight: 700;
+      color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .exam-item .exam-card-inner {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .exam-item img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .exam-item p {
+      font-size: 0.85rem;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .exam-item p {
+        font-size: 0.8rem;
+      }
+
+      .exam-item img {
+        max-width: 100px;
+      }
+    }
+
+    .exam-card-inner p {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease, max-height 1s ease;
+    }
+
+    .exam-card-inner:hover p {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    /* Hover effect */
+    #architectureTabs .nav-link:hover .exam-card-inner {
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      scale: 1.02;
+    }
+
+    /* Active (selected) effect */
+    #architectureTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+    }
+
+    /* Smooth transition */
+    #architectureTabs .exam-card-inner {
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .exam-card-box {
+        margin: 1rem;
+      }
+
+      .exam-card {
+        padding: 15px;
+      }
+
+      .exam-title {
+        font-size: 1.2rem;
+      }
+
+      .exam-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: inline-flex !important;
+        flex-direction: row !important;
+      }
+
+      .exam-item .exam-card-inner {
+        display: flex;
+        flex-direction: row !important;
+        /* Changed to row for image-text side by side */
+        align-items: center !important;
+        /* Center vertically */
+        padding: 0.75rem;
+        text-align: left;
+        width: 100%;
+      }
+
+      .exam-item img {
+        max-width: 60px;
+        margin-right: 1rem;
+        /* Space between image and text */
+        margin-bottom: 0;
+      }
+
+      .exam-item .text-container {
+        display: flex;
+        flex-direction: column !important;
+        flex-grow: 1;
+      }
+
+      .text-container p {
+        text-align: start !important;
+      }
+
+      .exam-item h5 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      .exam-item p {
+        font-size: 0.75rem;
+        opacity: 1;
+        max-height: none;
+        margin: 0;
+      }
+
+      .exam-card-inner:hover p {
+        max-height: none;
+      }
+
+      .exam-item .exam-card-inner:hover {
+        transform: none;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      #architectureTabs .nav-link:hover .exam-card-inner {
+        transform: none;
+        scale: 1;
+      }
+
+      #architectureTabs .nav-link.active .exam-card-inner {
+        background-color: #f0f7ff !important;
+        border: 2px solid #0d6efd !important;
+      }
+    }
+  </style>
+
+  <!-- Heading -->
+  <div class="exam-card-box m-5">
+    <div class="exam-card text-center">
+      <h4 class="exam-title">Architecture & Design Exams</h4>
+    </div>
+  </div>
+
+
+  <!-- Exam Cards Grid -->
+  <div class="container my-5" id="architectureTabs" role="tablist">
+
+    <div class="row justify-content-center g-4" role="presentation">
+      <!-- NATA -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+        <button id="NATA-tab" data-bs-toggle="tab" data-bs-target="#NATA" type="button" role="tab" aria-controls="NATA"
+          aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Architecture & Design/NATA-min.jpg" alt="NATA">
+
+            <div class="text-container">
+              <h5>NATA</h5>
+              <p>National Aptitude Test in Architecture</p>
+            </div>
+
+          </div>
+
+        </button>
+      </div>
+
+      <!-- UCEED -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+
+        <button id="UCEED-tab" data-bs-toggle="tab" data-bs-target="#UCEED" type="button" role="tab"
+          aria-controls="UCEED" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Architecture & Design/UCEED-min.jpg" alt="UCEED">
+            <div class="text-container">
+              <h5>UCEED</h5>
+              <p>Undergraduate Common Entrance Examination for Design</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- CEED -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+        <button id="CEED-tab" data-bs-toggle="tab" data-bs-target="#CEED" type="button" role="tab" aria-controls="CEED"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Architecture & Design/CEED-min.jpg" alt="CEED">
+            <div class="text-container">
+              <h5>CEED</h5>
+              <p>Common Entrance Examination for Design</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- NID -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+        <button id="NID-tab" data-bs-toggle="tab" data-bs-target="#NID" type="button" role="tab" aria-controls="NID"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Architecture & Design/NID-min.jpg" alt="NID">
+            <div class="text-container">
+              <h5>NID</h5>
+              <p>NID Entrance Exam</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- SEED -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+        <button id="SEED-tab" data-bs-toggle="tab" data-bs-target="#SEED" type="button" role="tab" aria-controls="SEED"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Architecture & Design/SEED-min.jpg" alt="SEED" class="img-fluid">
+            <div class="text-container">
+              <h5>SEED</h5>
+              <p>Symbiosis Entrance Exam for Design</p>
+            </div>
+          </div>
+          </abutton>
+      </div>
+    </div>
+  </div>
+  <!-- architecture & design boxes end-->
+
+
+  <!-- architecture & design contents -->
+  <div class="tab-content" id="architectureTabs">
+
+    <!-- NATA -->
+    <div class="tab-pane fade show active container my-5" id="NATA" role="tabpanel">
+
+      <style>
+        .hero h3 {
+          font-size: 1.75rem;
+          font-weight: 600;
+        }
+
+        .hero p {
+          font-size: 1rem;
+          color: #cacaca;
+        }
+
+        .card-hover {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .img-zoom-container {
+          overflow: hidden;
+          border-radius: 12px;
+        }
+
+        .img-zoom-container img {
+          transition: transform 0.4s ease;
+        }
+
+        .img-zoom-container:hover img {
+          transform: scale(1.08);
+        }
+      </style>
+      <!-- Hero Section -->
+      <section class="container my-4">
+        <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+          <div class="col">
+            <h3>Build Your Future in <span>Architecture</span> with NATA</h3>
+            <p class="mt-2 mb-0">
+              NATA is a national-level entrance exam conducted by the Council of Architecture (COA)<br>
+              for admission to 5-year B.Arch programs at universities and colleges across India.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NATA Section -->
+      <div class="container my-4">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-lg-8 mb-4">
+            <!-- Header Card -->
+            <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+              <h4 class="text-center text-light fw-bold p-3 m-0">
+                NATA – National Aptitude Test in Architecture
+              </h4>
+            </div>
+
+            <!-- Detail Cards -->
+            <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+              <h5 class="mb-4">
+                <i class="bi bi-mortarboard-fill"></i> NATA Details Overview
+              </h5>
+
+              <div class="row g-4">
+                <!-- Conducted By -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                      Council of Architecture (COA)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Eligibility -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                      10+2 with Math or 10+3 Diploma (50% min)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Seats -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                      ~19,788 seats in 365 colleges (1 international)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Application Fee -->
+                <div class="col-md-6 col-lg-6">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                      Gen/OBC Male ₹1,750 | Female ₹1,250<br>
+                      SC/ST/EWS/PWD Male ₹1,250 | Female ₹1,000<br>
+                      Transgender ₹1,000
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Exam Month -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                      March to June (3 attempts/year)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Exam Mode -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                      Computer-Based Test (CBT)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Candidates -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                      50,000 – 60,000 annually
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column Image -->
+          <div class="col-lg-4">
+            <div class="img-zoom-container shadow-sm">
+              <img src="./assets/img/right-side-image.jpg" alt="Architecture Image"
+                class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UCEED -->
+    <div class="tab-pane fade container" id="UCEED" role="tabpanel">
+      <section class="container my-4">
+        <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+          <div class="col">
+            <h3>Start Your <span>Design Career</span> with UCEED</h3>
+            <p class="mt-2 mb-0">
+              UCEED is a national-level entrance exam conducted by IIT Bombay for admission to B.Des programs<br>
+              at top institutes like IIT Bombay, Delhi, Guwahati, Hyderabad, Roorkee, and IIITDM Jabalpur.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-4">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-lg-8 mb-4">
+            <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+              <h4 class="text-center text-light fw-bold p-3 m-0">
+                UCEED – Undergraduate Common Entrance Examination for Design
+              </h4>
+            </div>
+
+            <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+              <h5 class="mb-4">
+                <i class="bi bi-palette-fill"></i> UCEED – National Level Entrance for B.Des
+              </h5>
+
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>IIT Bombay
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Passed Class
+                      XII (2024 or 2025), all streams eligible</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>245 seats across
+                      IITs and IIITDM Jabalpur</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application
+                        Fee:</strong><br>Female/SC/ST/PWD: ₹2,000 <br>Others: ₹4,000</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>January (Once
+                      a year)</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Computer-Based
+                      Test (CBT)</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing
+                        Candidates:</strong><br>15,408 appeared, 5,703 qualified</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-4">
+            <div class="img-zoom-container shadow-sm">
+              <img src="./assets/img/right-side-image.jpg" alt="Design Image"
+                class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .hero h3 {
+          font-size: 1.75rem;
+          font-weight: 600;
+        }
+
+        .hero p {
+          font-size: 1rem;
+          color: #cacaca;
+        }
+
+        .card-hover {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .img-zoom-container {
+          overflow: hidden;
+          border-radius: 12px;
+        }
+
+        .img-zoom-container img {
+          transition: transform 0.4s ease;
+        }
+
+        .img-zoom-container:hover img {
+          transform: scale(1.08);
+        }
+      </style>
+
+    </div>
+
+    <!-- CEED -->
+    <div class="tab-pane fade container" id="CEED" role="tabpanel">
+      <section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Pursue <span>Postgraduate Design Programs</span> with CEED</h3>
+      <p class="mt-2 mb-0">
+        CEED is a national-level entrance exam conducted by IIT Bombay for admission to M.Des programs<br>
+        at IITs and other leading design institutes across India.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          CEED – Common Entrance Examination for Design
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-palette2"></i> CEED – National Level Entrance for M.Des Programs
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                IIT Bombay on behalf of Ministry of Education (MoE)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Minimum 55% (50% for SC/ST/PwD) or equivalent grades in qualifying degree
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                Around 300 M.Des seats across IITs and top design institutes
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                Female/SC/ST/PwD: ₹2,000<br>Others: ₹4,000
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                January (Once a year)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Computer-Based Test (CBT)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Around 5,000 appeared; 1,878 qualified
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Design Student" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+    </div>
+    <!-- NID -->
+    <div class="tab-pane fade container" id="NID" role="tabpanel">
+     <section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Unlock Your Creativity with the <span>NID Entrance Exam</span></h3>
+      <p class="mt-2 mb-0">
+        The NID Design Aptitude Test (DAT) is a two-stage national-level exam for admission to design programs<br>
+        at National Institute of Design campuses—featuring a written test, studio test, and interview.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          NID Entrance Exam – Design Aptitude Test (DAT)
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4 ">
+          <i class="bi bi-palette"></i> NID DAT – National Level Exam for B.Des & M.Des
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                National Institute of Design
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Completed 10+2 in any stream from a recognized board (for B.Des)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                B.Des – 425 seats across 5 campuses<br>
+                M.Des – 347 seats across 3 campuses
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                General/OBC/EWS: ₹3,000<br>
+                SC/ST/PwD: ₹1,500
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                Prelims – January<br>
+                M.Des Mains – March to April<br>
+                B.Des Mains – April to May
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Pattern:</strong><br>
+                Two stages – DAT Prelims (written) and DAT Mains (studio test + interview)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Around 15,000 students appeared for Prelims
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="NID Design" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+    </div>
+    <!-- SEED -->
+    <div class="tab-pane fade container" id="SEED" role="tabpanel">
+     <section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Begin Your Design Journey with <span>SEED</span></h3>
+      <p class="mt-2 mb-0">
+        SEED is the entrance exam for admission to undergraduate design programs at Symbiosis Institute of Design (SID),<br>
+        selecting creative and skilled candidates with a passion for design.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          SEED – Symbiosis Entrance Exam for Design
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4 ">
+          <i class="bi bi-palette"></i> SEED – Entrance Exam for Design Programs
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Symbiosis Institute of Design (SID)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Passed 10+2 (any stream) with 50% (45% for SC/ST)<br>
+                OR 10+3 diploma from State Board
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                207 B.Des seats (180 Indian, 27 International)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹3,250 (₹2,250 SEED + ₹1,000 SID)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                January
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Online proctored (PC/Laptop-based)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Approximately 50,000 students annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="SEED Design" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+    </div>
+
+
+
+
+  </div>
+
+  <!-- architecture & design contents end -->
+
+
+  <!-- info -->
+
+  <style>
+    .content-box {
+      background-color: #ffffff;
+      border: 1px solid #e3e6e8;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .content-box h4 {
+      color: #10263D;
+      font-weight: 700;
+    }
+
+    .content-box p {
+      font-size: 1rem;
+      color: #2c3e50;
+      display: flex;
+      align-items: start;
+      margin-bottom: 1.25rem;
+    }
+
+    .content-box i {
+      font-size: 1.4rem;
+      color: #10263D;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .content-box a {
+      color: #10263D;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    @media (max-width: 576px) {
+      .content-box {
+        padding: 1.5rem;
+      }
+
+      .content-box p {
+        font-size: 0.95rem;
+      }
+
+      .content-box i {
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+      }
+    }
+  </style>
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-12">
+        <div class="content-box">
+          <h4 class="text-center mb-4">
+            <i class="bi bi-building me-2"></i>
+            Architecture & Design: Shape the Future
+          </h4>
+
+          <p>
+            <i class="bi bi-people-fill"></i>
+            <span><strong>Growing Aspirations:</strong> 80,000+ students explore careers in Architecture, UI/UX, Product
+              Design, and Visual Communication every year.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-award-fill"></i>
+            <span><strong>Top Entrance Exams:</strong> Gain admission to elite colleges through NATA, UCEED, CEED, NID,
+              and SEED exams.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-lightbulb-fill"></i>
+            <span><strong>Creative Impact:</strong> Blend artistic vision with real-world impact, from iconic
+              architecture to innovative product designs.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-journal-richtext"></i>
+            <span><strong>Expert Guidance:</strong> Access exam tips, college lists, cutoffs, portfolio advice, and
+              career trends at <a href="https://mustknowcolleges.com"
+                target="_blank"><strong>MustKnowColleges.com</strong></a>.</span>
+          </p>
+
+
+
+          <p>
+            <i class="bi bi-telephone-fill"></i>
+            <span><strong>Start Your Journey:</strong> WhatsApp us at <a href="https://wa.me/919585222121"
+                target="_blank">9585222121</a> to turn your vision into reality!</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- info end -->
+
+
+
+  <div id="footer"></div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Javascript -->
+
+  <script src="./assets/js/boostrap.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2581 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mustknowcollege</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Css -->
+
+  <link rel="stylesheet" href="./assets/css/boostrap.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <style>
+    body {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+
+  <style>
+    :root {
+      --pry-clr: #10263D;
+      --sec-clr:  #001b36;
+      --gray-clr: #464646;
+      --perfect-blue: #0f457f;
+    }
+
+    .icon-img {
+      width: 50% !important;
+    }
+  </style>
+
+  
+
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+
+
+  <div id="header"></div>
+
+
+
+
+
+
+  <!-- hero -->
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      display: flex;
+      background-image: url(./assets/new-img/enterexam-bg-banner.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3">
+      <h3 style="color: white">Discover <span> Engineering & Technology
+        </span> for Hands on Career Training</h3>
+      <p>Explore vocational programs and practical education options that <br> lead directly to employment in
+        high-demand fields</p>
+    </div>
+  </section>
+
+
+  <!-- hero end-->
+
+
+
+  <!-- choose boxes -->
+
+  <style>
+    .exam-card-box {
+      display: flex;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+
+    .exam-card {
+      background-color: var(--pry-clr, #0d6efd);
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 1rem;
+      padding: 20px;
+      color: white;
+    }
+
+    .exam-title {
+      font-weight: 700;
+      color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .exam-item .exam-card-inner {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .exam-item img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .exam-item p {
+      font-size: 0.85rem;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .exam-item p {
+        font-size: 0.8rem;
+      }
+
+      .exam-item img {
+        max-width: 100px;
+      }
+    }
+
+    .exam-card-inner p {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease, max-height 1s ease;
+    }
+
+    .exam-card-inner:hover p {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    /* Hover effect */
+    #examTabs .nav-link:hover .exam-card-inner {
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      scale: 1.02;
+    }
+
+    /* Active (selected) effect */
+    #examTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+    }
+
+    /* Smooth transition */
+    #examTabs .exam-card-inner {
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .exam-card-box {
+        margin: 1rem;
+      }
+
+      .exam-card {
+        padding: 15px;
+      }
+
+      .exam-title {
+        font-size: 1.2rem;
+      }
+
+      .exam-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: inline-flex !important;
+        flex-direction: row !important;
+      }
+
+      .exam-item .exam-card-inner {
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        padding: 0.75rem;
+        text-align: left;
+        width: 100%;
+      }
+
+      .exam-item img {
+        max-width: 60px;
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+
+      .exam-item h5 {
+        font-size: 1rem;
+        margin: 0;
+        color: #333;
+      }
+
+      .exam-item p {
+        font-size: 0.75rem;
+        opacity: 1;
+        max-height: none;
+        text-align: left;
+        margin: 0;
+      }
+
+      .exam-card-inner:hover p {
+        max-height: none;
+      }
+
+      .exam-item .exam-card-inner:hover {
+        transform: none;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      #examTabs .nav-link:hover .exam-card-inner {
+        transform: none;
+        scale: 1;
+      }
+
+      #examTabs .nav-link.active .exam-card-inner {
+        background-color: #f0f7ff;
+        border: 2px solid #0d6efd;
+      }
+
+      /* Ensure text stays on the right */
+      .exam-item .text-container {
+        display: flex;
+        flex-direction: column !important;
+        flex-grow: 1;
+      }
+    }
+  </style>
+
+<!-- head text -->
+ 
+  <div class="exam-card-box m-5">
+    <div class="exam-card text-center" style="background-color: var(--perfect-blue);">
+      <h4 class="exam-title" >Engineering & Technology Exams</h4>
+    </div>
+  </div>
+<!-- head text end-->
+
+  <div class="container my-5" id="examTabs" role="tablist">
+    <div class="row justify-content-center g-4" role="presentation">
+      <!-- JEE Main / Advanced -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="JEE-tab" data-bs-toggle="tab" data-bs-target="#JEE" type="button" role="tab" aria-controls="JEE"
+          aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/JEE-min.jpg" alt="JEE Exam">
+            <div class="text-container">
+              <h5>JEE</h5>
+              <p>Joint Entrance Examination Main / Advanced</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- BITSAT -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="BITSAT-tab" data-bs-toggle="tab" data-bs-target="#BITSAT" type="button" role="tab"
+          aria-controls="BITSAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/BITSAT -min.jpg" alt="BITSAT Exam">
+            <div class="text-container">
+              <h5>BITSAT</h5>
+              <p>Birla Institute of Technology and Science Admission Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- VITEEE -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="VITEEE-tab" data-bs-toggle="tab" data-bs-target="#VITEEE" type="button" role="tab"
+          aria-controls="VITEEE" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/VITEEE-min.jpg" alt="VITEEE Exam">
+            <div class="text-container">
+              <h5>VITEEE</h5>
+              <p>VIT Engineering Entrance Examination</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- SRMJEEE -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="SRMJEEE-tab" data-bs-toggle="tab" data-bs-target="#SRMJEEE" type="button" role="tab"
+          aria-controls="SRMJEEE" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/SRMJEEE-min.jpg" alt="SRMJEEE Exam">
+            <div class="text-container">
+              <h5>SRMJEEE</h5>
+              <p>SRM Joint Engineering Entrance Examination</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- MET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="MET-tab" data-bs-toggle="tab" data-bs-target="#MET" type="button" role="tab" aria-controls="MET"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/MET-min.jpg" alt="MET Exam">
+            <div class="text-container">
+              <h5>MET</h5>
+              <p>Manipal Entrance Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- AMUEEE -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="AMUEEE-tab" data-bs-toggle="tab" data-bs-target="#AMUEEE" type="button" role="tab"
+          aria-controls="AMUEEE" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/AMUEEE-min.jpg" alt="AMUEEE Exam">
+            <div class="text-container">
+              <h5>AMUEEE</h5>
+              <p>Aligarh Muslim University Engineering Entrance Exam</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- LPU NEST -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="LPU-NEST-tab" data-bs-toggle="tab" data-bs-target="#LPU-NEST" type="button" role="tab"
+          aria-controls="LPU-NEST" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/img/MedicalandLifeScience.png" alt="LPU NEST Exam">
+            <div class="text-container">
+              <h5>LPU NEST</h5>
+              <p>Lovely Professional University National Entrance and Scholarship Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- TNEA -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="TNEA-tab" data-bs-toggle="tab" data-bs-target="#TNEA" type="button" role="tab" aria-controls="TNEA"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/img/MedicalandLifeScience.png" alt="TNEA Exam">
+            <div class="text-container">
+              <h5>TNEA</h5>
+              <p>State Engineering Entrance Exam – TNEA</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- TS EAMCET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="TS-EAMCET-tab" data-bs-toggle="tab" data-bs-target="#TS-EAMCET" type="button" role="tab"
+          aria-controls="TS-EAMCET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/TS EAMCET-min.jpg" alt="TS EAMCET Exam">
+           <div class="text-container"> <h5>TS EAMCET</h5>
+            <p>Telangana State Engineering, Agriculture and Medical Common Entrance Test</p></div>
+          </div>
+        </button>
+      </div>
+      <!-- AP EAMCET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="AP-EAMCET-tab" data-bs-toggle="tab" data-bs-target="#AP-EAMCET" type="button" role="tab"
+          aria-controls="AP-EAMCET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/AP-EAMCET-min.jpg" alt="AP EAMCET Exam">
+            <div class="text-container">
+              <h5>AP EAMCET</h5>
+              <p>Andhra Pradesh Engineering, Agriculture and Pharmacy Common Entrance Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- Assam CEE -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="Assam-CEE-tab" data-bs-toggle="tab" data-bs-target="#Assam-CEE" type="button" role="tab"
+          aria-controls="Assam-CEE" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/Assam-CEE -min.jpg" alt="Assam CEE Exam">
+            <div class="text-container">
+              <h5>Assam CEE</h5>
+              <p>Assam Combined Entrance Examination</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- COMEDK UGET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="COMEDK-UGET-tab" data-bs-toggle="tab" data-bs-target="#COMEDK-UGET" type="button" role="tab"
+          aria-controls="COMEDK-UGET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/img/MedicalandLifeScience.png" alt="COMEDK UGET Exam">
+            <div class="text-container">
+              <h5>COMEDK UGET</h5>
+              <p>Consortium of Medical, Engineering and Dental Colleges of Karnataka</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- KCET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="KCET-tab" data-bs-toggle="tab" data-bs-target="#KCET" type="button" role="tab" aria-controls="KCET"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/KCET-min.jpg" alt="KCET Exam">
+            <div class="text-container">
+              <h5>KCET</h5>
+              <p>Karnataka Common Entrance Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- KEAM -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="KEAM-tab" data-bs-toggle="tab" data-bs-target="#KEAM" type="button" role="tab" aria-controls="KEAM"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/KEAM-min.jpg" alt="KEAM Exam">
+            <div class="text-container">
+              <h5>KEAM</h5>
+              <p>Kerala Engineering Architecture Medical Entrance Exam</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- MHT CET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="MHT-CET-tab" data-bs-toggle="tab" data-bs-target="#MHT-CET" type="button" role="tab"
+          aria-controls="MHT-CET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/MHT-CET-min.jpg" alt="MHT CET Exam">
+            <div class="text-container">
+              <h5>MHT CET</h5>
+              <p>Maharashtra Common Entrance Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- WBJEE -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="WBJEE-tab" data-bs-toggle="tab" data-bs-target="#WBJEE" type="button" role="tab"
+          aria-controls="WBJEE" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/WBJEE -min.jpg" alt="WBJEE Exam">
+            <div class="text-container">
+              <h5>WBJEE</h5>
+              <p>West Bengal Joint Entrance Examination</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- JEE Main Paper 2 -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="JEE-Main-Paper2-tab" data-bs-toggle="tab" data-bs-target="#JEE-Main-Paper2" type="button" role="tab"
+          aria-controls="JEE-Main-Paper2" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Engineering&Technology/JEE-MAIN-min.jpg" alt="JEE Main Paper 2 Exam">
+            <div class="text-container">
+              <h5>JEE Main Paper 2</h5>
+              <p>Joint Entrance Examination for B.Arch/B.Planning</p>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- choose boxes end-->
+
+  <!--box content  -->
+
+   <div class="tab-content " id="scholarshipTabsContent" style="margin: 100px 0px;">
+
+ <!-- 1 -->
+  <!-- JEE Tab Panel -->
+<div class="tab-pane fade show active container my-5 p-4" id="JEE" role="tabpanel">
+  <style>
+    .hero h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #cacaca;
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-hover i {
+      transition: color 0.3s ease;
+    }
+
+    .img-zoom-container {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .img-zoom-container img {
+      transition: transform 0.4s ease;
+    }
+
+    .img-zoom-container:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Explore <span>Engineering & Technology</span> Through JEE & Vocational Programs
+        </h3>
+        <p class="mt-2 mb-0">
+          Get hands-on training and access India’s top engineering institutes via JEE.<br>
+          Vocational options also offer direct career paths in high-demand tech fields.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JEE Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            JEE – Joint Entrance Examination for Engineering
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-cpu-fill"></i> JEE – Main & Advanced Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>National Testing Agency (NTA)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Class 12 PCM students
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~42,177 (NITs, IIITs, GFTIs)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,000 (Male), ₹800 (Female), ₹500 (SC/ST/PwD)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>January & April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Students:</strong><br>~13.8–15 lakh yearly
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="Engineering Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 -->
+ <!-- BITSAT Tab Panel -->
+<div class="tab-pane fade show container my-5" id="BITSAT" role="tabpanel">
+  <style>
+    .hero h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #cacaca;
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-hover i {
+      transition: color 0.3s ease;
+    }
+
+    .img-zoom-container {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .img-zoom-container img {
+      transition: transform 0.4s ease;
+    }
+
+    .img-zoom-container:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Secure Your Admission to <span>BITS Pilani</span> with BITSAT
+        </h3>
+        <p class="mt-2 mb-0">
+          BITSAT is a standardized entrance exam for admission to BE, B.Pharm, and M.Sc.<br>
+          programs at BITS Pilani campuses in Pilani, Goa, and Hyderabad.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BITSAT Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            BITSAT – Birla Institute of Technology and Science Admission Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> BITSAT – Admission Test for Undergraduate Programs
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>BITS Pilani
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>12th Passed (PCM + English proficiency)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~4,020 Seats (Pilani, Goa, Hyderabad)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>Male: ₹3,500 | Female: ₹3,000 (one session)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>May & June
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>~300,000 annually
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="BITSAT Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 3 -->
+<!-- VITEEE Tab Panel -->
+<div class="tab-pane fade show container my-5" id="VITEEE" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Join <span>VIT B.Tech Programs</span> with VITEEE
+        </h3>
+        <p class="mt-2 mb-0">
+          VITEEE is the entrance exam for admission to undergraduate engineering programs (B.Tech)<br>
+          at VIT campuses in Vellore, Chennai, Bhopal, and Amaravati.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VITEEE Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            VITEEE – Vellore Institute of Technology Engineering Entrance Examination
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> VITEEE – Admission Test for B.Tech Programs
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Vellore Institute of Technology (VIT)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>12th Passed (PCM/PCB, min 60% aggregate)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~5,000 (across all VIT campuses)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,350 (General)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>April & May
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>~2,00,000 annually
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="VITEEE Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4 -->
+ <!-- SRMJEEE Tab Panel -->
+<div class="tab-pane fade show container my-5" id="SRMJEEE" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Get Admitted to <span>SRM B.Tech Programs</span> with SRMJEEE
+        </h3>
+        <p class="mt-2 mb-0">
+          SRMJEEE is a remote-proctored online exam for admission to B.Tech programs at SRMIST<br>
+          campuses in Chennai, Delhi NCR, Haryana, and Andhra Pradesh.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SRMJEEE Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            SRMJEEE – SRM Joint Engineering Entrance Examination
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> SRMJEEE – Joint Engineering Entrance Examination
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>SRM Institute of Science and Technology (SRMIST)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Indian residents or NRIs/PIO/OCI card holders, Passed 10+2 with 60% in PCM + 1 specified subject
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~7,000 undergraduate seats (across SRM campuses)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,400
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>April, June & July
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Remote Proctored Online Mode (RPOM)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>~150,000 to 200,000 annually
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="SRMJEEE Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5 -->
+<!-- MET Tab Panel -->
+<div class="tab-pane fade show container my-5" id="MET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Join <span>Manipal University</span> with MET
+        </h3>
+        <p class="mt-2 mb-0">
+          The Manipal Entrance Test (MET) is the gateway for admission to UG and PG courses,<br>
+          including B.Tech, M.Tech, BBA, M.Sc, and more at Manipal campuses in Bengaluru, Jaipur, Sikkim, and beyond.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MET Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            MET – Manipal Entrance Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> MET – Manipal Entrance Test
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Manipal Academy of Higher Education (MAHE)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>10+2 Passed with PCM + English, 50% minimum aggregate
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~3,000 UG seats (across Manipal campuses)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹2,000 (Form ₹600 + Test ₹1,400)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>April & May
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Computer-Based Test (CBT)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>~50,000 annually
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="MET Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- 6 -->
+<!-- AMUEEE Tab Panel -->
+<div class="tab-pane fade show container my-5" id="AMUEEE" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Secure Your Admission to <span>AMU B.Tech & B.Arch</span> with AMUEEE
+        </h3>
+        <p class="mt-2 mb-0">
+          AMUEEE is a pen-and-paper test for admission to B.Tech and B.Arch programs at AMU,<br>
+          covering Physics, Chemistry, and Mathematics with 150 questions and negative marking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMUEEE Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            AMUEEE – Aligarh Muslim University Engineering Entrance Exam
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> AMUEEE – Engineering Entrance Examination
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Aligarh Muslim University (AMU)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>10+2 with 50% aggregate or Engineering Diploma with 50% marks
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>430 B.Tech + 20 B.Arch seats
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,000
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Pen-and-paper-based
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>~30,000 annually
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="AMUEEE Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7 -->
+ <!-- LPU NEST Tab Panel -->
+<div class="tab-pane fade show container my-5" id="LPU-NEST" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Get Admitted to <span>LPU Programs</span> with LPU NEST
+        </h3>
+        <p class="mt-2 mb-0">
+          LPU NEST is a national-level entrance and scholarship exam for admission to B.Tech, Law,<br>
+          MBA, PhD, Design, Agriculture, and more at Lovely Professional University.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LPU NEST Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            LPU NEST – Lovely Professional University National Entrance and Scholarship Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> LPU NEST – National Entrance and Scholarship Test
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Lovely Professional University
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>10+2 with 60%+ or LPUNEST/CUET
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>150+ programs with scholarship opportunities
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,000 (soft kit) / ₹1,500 (printed kit)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right"></i> <strong>Exam Month:</strong><br>April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Remote Proctored / Exam Centers
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>75,000+ annually
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="LPU NEST Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 8 -->
+ <!-- TNEA Tab Panel -->
+<div class="tab-pane fade show container my-5" id="TNEA" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Join <span>State Engineering Colleges</span> with TNEA
+        </h3>
+        <p class="mt-2 mb-0">
+          TNEA is the state-level entrance exam for B.Tech and B.E. programs, focusing on Physics,<br>
+          Chemistry, and Mathematics, for admission to Tamil Nadu’s engineering colleges.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TNEA Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            TNEA – Tamil Nadu Engineering Admissions
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> TNEA – Tamil Nadu Engineering Admissions
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>TNEA Committee (DTE, Tamil Nadu)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>10+2 with PCM/Biotech/Biology, Minimum 45% marks
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>433 colleges, 69% seats filled via counseling
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹500 (General) / ₹250 (SC/ST/SCA)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Counseling Month:</strong><br>July
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Registrations:</strong><br>2,53,954 registrations, 2,32,376 intake seats
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="TNEA Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 9 -->
+ <!-- TS EAMCET Tab Panel -->
+<div class="tab-pane fade show container my-5" id="TS-EAMCET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Explore <span>Engineering, Agriculture & Pharmacy</span> with TS EAMCET
+        </h3>
+        <p class="mt-2 mb-0">
+          TS EAMCET is a state-level exam for admission to B.Tech, Agriculture, and Pharmacy programs<br>
+          in Telangana, conducted annually by JNTU Hyderabad on behalf of the Telangana State Council.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TS EAMCET Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            TS EAMCET – Telangana State Engineering, Agriculture and Medical Common Entrance Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> TS EAMCET – Engineering, Agriculture and Medical Entrance Test
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>JNTU Hyderabad (for TSCHE)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>10+2 with 45% marks (40% for reserved categories)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>85,756 engineering + agriculture/pharmacy seats
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹900 (General) / ₹500 (SC/ST/PH)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>April & May
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Computer-Based Test (CBT)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>~3,20,587 (Engineering + Agriculture & Medical)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="TS EAMCET Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 10 -->
+ <!-- AP EAPCET Tab Panel -->
+<div class="tab-pane fade show container my-5" id="AP-EAMCET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Pursue <span>UG Programs in Andhra Pradesh</span> with AP EAPCET
+        </h3>
+        <p class="mt-2 mb-0">
+          AP EAPCET is the state-level entrance exam for engineering, agriculture, and pharmacy<br>
+          programs in Andhra Pradesh, conducted by JNTU Kakinada for APSCHE.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AP EAPCET Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            AP EAMCET – Andhra Pradesh Engineering, Agriculture and Pharmacy Common Entrance Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> AP EAPCET – Engineering, Agriculture and Pharmacy Entrance Test
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md apple-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>JNTU Kakinada (for APSCHE)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Passed or appearing 10+2 (AP/TS Board or equivalent)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>1,43,254 engineering seats (1,38,972 private)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹600 (Gen), ₹550 (BC), ₹500 (SC/ST)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>May
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Computer-Based Test (CBT)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>2,24,724 appeared; 1,71,514 qualified (Engineering)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="AP EAPCET Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 11 -->
+ <!-- Assam CEE Tab Panel -->
+<div class="tab-pane fade show container my-5" id="Assam-CEE" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Join <span>Engineering Colleges in Assam</span> with Assam CEE
+        </h3>
+        <p class="mt-2 mb-0">
+          Assam CEE is a state-level entrance exam conducted by ASTU for B.Tech admissions,<br>
+          testing students in Physics, Chemistry, and Mathematics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assam CEE Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            Assam CEE – Assam Combined Entrance Examination
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> Assam CEE – Combined Entrance Examination
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Assam Science and Technology University (ASTU)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Assam residents, 10+2 with PCM & English, 45% marks (40% reserved)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~1,335 seats across 10 colleges
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,350
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Pen-and-paper-based (MCQs)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>25,000–40,000 annually
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="Assam CEE Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 12 -->
+ <!-- COMEDK UGET Tab Panel -->
+<div class="tab-pane fade show container my-5" id="COMEDK-UGET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Get into <span>Top Karnataka Engineering Colleges</span> with COMEDK UGET
+        </h3>
+        <p class="mt-2 mb-0">
+          COMEDK UGET is a national-level computer-based exam for admission to around 170<br>
+          engineering colleges in Karnataka, conducted by the COMEDK consortium.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMEDK UGET Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            COMEDK UGET – Consortium of Medical, Engineering and Dental Colleges of Karnataka Undergraduate Entrance Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> COMEDK UGET – Engineering Entrance Exam
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>COMEDK
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>10+2 with PCM & English, 45% (40% for SC/ST/OBC Karnataka)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~20,000 engineering seats
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,950
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>May
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Computer-Based Test (CBT)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>1,03,799 appeared (1,18,005 applied)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="COMEDK UGET Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 13 -->
+ <!-- KCET Tab Panel -->
+<div class="tab-pane fade show container my-5" id="KCET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Secure Your Seat in <span>Karnataka Colleges</span> with KCET
+        </h3>
+        <p class="mt-2 mb-0">
+          KCET is a state-level entrance exam conducted by KEA for admission to engineering,<br>
+          agriculture, and pharmacy programs in Karnataka, with thousands of students competing each year.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KCET Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            KCET – Karnataka Common Entrance Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> KCET – Karnataka Common Entrance Test
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Karnataka Examinations Authority (KEA)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>2nd PUC/12th with 45% in PCM/Biology/Biotech + English
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>1,32,309 engineering seats
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹500 (Gen/OBC-KA), ₹250 (SC/ST/CAT-1-KA), ₹750 (Non-KA), ₹5000 (Foreign)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Pen-and-paper-based
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>2,44,345 appeared (2,61,610 applied)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="KCET Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 14 -->
+ <!-- KEAM Tab Panel -->
+<div class="tab-pane fade show container my-5" id="KEAM" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Get Admitted to <span>UG Programs in Kerala</span> with KEAM
+        </h3>
+        <p class="mt-2 mb-0">
+          KEAM is a state-level entrance exam conducted by CEE Kerala for admission to engineering,<br>
+          architecture, and medical undergraduate programs across the state.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEAM Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            KEAM – Kerala Engineering Architecture Medical Entrance Exam
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> KEAM – Kerala Engineering Architecture Medical Entrance Exam
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Commissioner for Entrance Examinations (CEE), Kerala
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Class 12 with Physics & Maths (50% each)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>56,407 engineering & 4,505 MBBS seats
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹625–₹1,125 (Gen/OBC), ₹250–₹500 (SC)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Computer-Based Test (CBT)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>79,044 appeared, 58,340 qualified
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="KEAM Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 15 -->
+ <!-- MHT CET Tab Panel -->
+<div class="tab-pane fade show container my-5" id="MHT-CET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Join <span>Engineering & Pharmacy Programs</span> in Maharashtra with MHT CET
+        </h3>
+        <p class="mt-2 mb-0">
+          MHT CET is a state-level exam conducted annually by the State CET Cell for admission to<br>
+          various engineering and pharmacy programs at universities and colleges in Maharashtra.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MHT CET Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            MHT CET – Maharashtra Common Entrance Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> MHT CET – Maharashtra Common Entrance Test
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-啦100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>State CET Cell
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Indian nationals, 12th with 45% PCM/PCB (40% reserved)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~1,24,638 engineering seats
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,000 (Gen), ₹800 (Reserved)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Computer-Based Test (CBT)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>6,75,377 appeared (7,25,052 registered)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="MHT CET Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- 16 -->
+ <!-- WBJEE Tab Panel -->
+<div class="tab-pane fade show container my-5" id="WBJEE" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Get Admitted to <span>West Bengal’s Engineering & Pharma Colleges</span> with WBJEE
+        </h3>
+        <p class="mt-2 mb-0">
+          WBJEE is a state-level entrance exam conducted by WBJEEB for admission to B.Tech and B.Pharma<br>
+          courses in various universities, government colleges, and private institutions across West Bengal.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WBJEE Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            WBJEE – West Bengal Joint Entrance Examination
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> WBJEE – West Bengal Joint Entrance Examination
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>WBJEEB
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>12th with Physics & Math + Chemistry/Biology/Biotech/CS
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~35,000 engineering & pharmacy seats
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹500 (Gen Male), ₹400 (Gen Female/Reserved Male), ₹300 (Reserved Female/Third Gender)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Pen-and-paper-based
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>1,42,694 appeared, 1,12,963 passed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="WBJEE Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 17 -->
+ <!-- JEE Main Paper 2 Tab Panel -->
+<div class="tab-pane fade show container my-5" id="JEE-Main-Paper2" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>
+          Join <span>B.Arch & B.Planning Programs</span> with JEE Main Paper 2
+        </h3>
+        <p class="mt-2 mb-0">
+          JEE Main Paper 2 is a national-level exam conducted by NTA for admission to B.Arch and B.Planning<br>
+          programs at top institutions like NITs, SPAs, and other centrally funded institutes across India.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JEE Main Paper 2 Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            JEE Main Paper 2 – Joint Entrance Exam Main Paper 2 for B.Arch/B.Planning
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> JEE Main Paper 2 – B.Arch/B.Planning Entrance Exam
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>National Testing Agency (NTA)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>10+2 with Maths, no age limit, 3 attempts
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~824 B.Arch seats (NITs, SPAs, etc.)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,000 (Gen/OBC male), ₹800 (female)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>January & April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>CBT (Math, Aptitude) + Offline Drawing
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>44,144 (B.Arch) + 18,596 (B.Planning)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/img/right-side-image.jpg" alt="JEE Main Paper 2 Pathways"
+            class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+ 
+  <!--box content end -->
+
+  <!-- info -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-12">
+        <div class="content-box">
+          <h4 class="text-center mb-4">
+            <i class="bi bi-cpu-fill me-2"></i>
+            Engineering & Technology: Build the Future
+          </h4>
+
+          <p>
+            <i class="bi bi-people-fill me-2"></i>
+            <span><strong>Massive Participation:</strong> 15+ lakh students appear for engineering exams
+              annually.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-award-fill me-2"></i>
+            <span><strong>Top Exams:</strong> BITSAT, VITEEE, TNEA, MHT CET, and more.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-globe2 me-2"></i>
+            <span><strong>Expert Help:</strong> Visit <a href="https://mustknowcolleges.com"
+                target="_blank">MustKnowColleges.com</a> for guidance.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-cpu-fill me-2"></i>
+            <span><strong>Career Paths:</strong> AI, Data Science, Robotics, Green Tech & more.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-telephone-forward-fill me-2"></i>
+            <span><strong>Get Started:</strong> WhatsApp <a href="https://wa.me/919585222121"
+                target="_blank">9585222121</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- info end-->
+
+
+
+
+
+
+  <div id="footer"></div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Javascript -->
+
+  <script src="./assets/js/boostrap.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

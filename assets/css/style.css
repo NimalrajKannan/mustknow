@@ -1,0 +1,375 @@
+
+
+body{
+    font-family: "DM Sans", sans-serif;
+   
+}
+
+.hero {
+    background: var(--pry-clr);
+    text-align: center;
+    padding: 70px 0px 40px 0px !important;
+    color: #ffff;
+}
+
+:root{
+    --pry-clr:#10263D;
+        --sec-clr: #FF8C42;
+    --gray-clr:#464646;
+}
+
+
+.own-primary-btn{
+    width: 150px;
+    background-color: #FF8C42;
+    color: rgb(255, 255, 255);
+}
+.own-primary-btn:hover{
+    background-color: #ff8132;
+    color: rgb(255, 255, 255);
+}
+.own-secondary-btn{
+    width: 150px;
+    background-color: #10263D;
+    color: rgb(255, 255, 255);
+}
+.own-secondary-btn:hover{
+    background-color: #142f4c;
+    color: rgb(255, 255, 255);
+}
+
+.owm-margin{
+    margin-top: 30px;
+}
+
+h1{
+    font-weight: bold;
+    color: var(--pry-clr)
+}
+
+h5{
+    font-weight: bold;
+    color: var(--gray-clr)
+}
+
+.text-clr{
+    color: var(--gray-clr);
+}
+
+.icon-img{
+    width: 80% !important;
+}
+.text-aline {
+    display: block;
+}
+
+.own-gridlayout{
+    width: 90%;
+    margin: auto;
+}
+.tamil-fontsize{
+    font-size: 28px !important;
+
+}
+.font-size{
+    font-size: 50px !important;
+}
+.btn-primary {
+    background-color: var(--sec-clr);
+    border-color: var(--sec-clr);
+}
+.btn-primary:hover {
+    background-color: #e67730;
+    border-color: #e67730;
+}
+
+/* navbar */
+
+      /* Show dropdown menu on hover */
+      .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    /* Ensure the dropdown remains open while hovering */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+    
+            /* Hide Bootstrap's default dropdown arrow */
+            .dropdown-toggle::after {
+                display: none !important;
+            }
+            
+            /* Custom transition class */
+            .transition-all {
+                transition: all 0.3s ease;
+            }
+            
+            /* Custom dropdown arrow styling */
+            .dropdown-arrow {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                margin-left: 0.255em;
+                vertical-align: 0.255em;
+                content: "";
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+                color: inherit; /* Match parent text color */
+            }
+            
+            /* Rotate arrow when dropdown is shown */
+            .show > .nav-link > .dropdown-arrow,
+            .dropdown:hover > .nav-link > .dropdown-arrow {
+                transform: rotate(180deg);
+            }
+            
+            /* Nav item hover effect */
+            .nav-item:hover .nav-link {
+                color:var(--pry-clr) !important;
+            }
+            
+            /* Dropdown menu item hover effect */
+            .dropdown-item:hover {
+                background-color: #f8f9fa;
+                padding-left: 1.5rem !important;
+                color:var(--sec-clr) !important;
+            }
+            
+            /* Dropdown menu styling */
+            .dropdown-menu {
+                min-width: 12rem;
+                padding: 0.5rem 0;
+                margin-top: 0.5rem;
+            }
+            
+            /* Button hover effect */
+            .own-primary-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            /* Navbar brand hover effect */
+            .navbar-brand:hover img {
+                opacity: 0.8;
+            }
+
+
+   /* Add hover effects for the links */
+   .course-list a {
+    color: inherit; /* Inherit the default text color */
+    transition: all 0.3s ease;
+}
+
+.course-list a:hover {
+    color: #ff8132; /* Orange hover color */
+    padding-left: 5px; /* Slight indent on hover */
+}
+
+/* Change arrow color on hover to match */
+.course-list li:hover .bi-arrow-right-circle-fill {
+    color: #ff8132; /* Orange color to match hover */
+}
+
+/* Style the arrow icons */
+.bi-arrow-right-circle-fill {
+    color: var(--sec-clr); /* Match your theme color */
+    margin-right: 8px;
+    transition: all 0.3s ease; /* Smooth transition for arrow */
+}
+
+
+/* Custom navbar toggler icon styles */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler-icon-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+}
+
+.navbar-toggler-icon-custom .bar {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger animation */
+.navbar-toggler[aria-expanded="true"] .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Smooth dropdown (Falldown Animation) */
+.smooth-dropdown {
+    background-color: white;
+    animation: falldownAnimation 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@keyframes falldownAnimation {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover effect only on text */
+.dropdown-item {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.dropdown-item:hover {
+    color: #FF8C42;
+    background-color: transparent;
+}
+
+/* Prevent dropdown from disappearing quickly */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+}
+
+/* Improved button style */
+.own-primary-btn {
+    background-color: #FF8C42;
+    border: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.own-primary-btn:hover {
+    background-color: #FF701C;
+}
+
+/* Main menu items hover effect */
+.navbar-nav .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF8C42 !important;
+}
+
+/* scroll ticker */
+.scroll-ticker {
+   
+    width: 100%;
+    overflow: hidden;
+    background:var(--sec-clr);
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .scroll-track {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 30s linear infinite;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    color: white !important;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+  .college-heading {
+    background-color: var(--sec-clr) !important;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s;
+    width: 100%; /* Full width for proper centering */
+    text-align: center; /* Center the text */
+}
+
+.college-heading:hover {
+    background-color: var(--pry-clr);
+    opacity: 0.9; /* Slight hover effect */
+}
+
+.college-heading i {
+    margin-right: 10px; /* Space between icon and text */
+    transition: transform 0.3s;
+}
+
+.college-heading:hover i {
+    transform: translateY(3px);
+}
+
+/* Container to center the heading if needed */
+.heading-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* mobile */
+
+@media screen and(max-width:600px) {
+
+.icon-img{
+    width: 100% !important;
+}
+.font-size{
+    font-size: 28px !important;
+}
+.own-primary-btn {
+    font-size: 1rem !important; /* Even smaller font size for very small screens */
+  }
+
+  .tamil-fontsize {
+    font-size: 21px !important;
+}
+
+    
+}
+

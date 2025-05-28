@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mustknowcollege</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Css -->
+
+  <link rel="stylesheet" href="./assets/css/boostrap.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --pry-clr: #10263D;
+      --sec-clr: #001b36;
+      --gray-clr: #464646;
+      --perfect-blue: #0f457f;
+    }
+
+    .card {
+      background-color: var(--pry-clr);
+      color: #ffff;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+
+
+  <div id="header"></div>
+
+
+
+
+  <!-- hero -->
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      display: flex;
+      background-image: url(./assets/new-img/enterexam-bg-banner.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3 text-capitalize">
+      <h3>Discover <span>Agriculture
+
+        </span> for Hands on Career Training</h3>
+      <p>Explore vocational programs and practical education options that <br> lead directly to employment in
+        high-demand fields</p>
+    </div>
+  </section>
+
+  <!-- hero end-->
+
+  <!-- Agriculture box -->
+
+  <style>
+    .exam-card-box {
+      display: flex;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+
+    .exam-card {
+      background-color: var(--pry-clr, #0d6efd);
+      /* Fallback to blue if --pry-clr is undefined */
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 1rem;
+      padding: 20px;
+      color: white;
+    }
+
+    .exam-title {
+      font-weight: 700;
+      color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .exam-item .exam-card-inner {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .exam-item img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .exam-item p {
+      font-size: 0.85rem;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .exam-item p {
+        font-size: 0.8rem;
+      }
+
+      .exam-item img {
+        max-width: 100px;
+      }
+    }
+
+    .exam-card-inner p {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease, max-height 1s ease;
+    }
+
+    .exam-card-inner:hover p {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    /* Hover effect */
+    #AgricultureTabs .nav-link:hover .exam-card-inner {
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      scale: 1.02;
+    }
+
+    /* Active (selected) effect */
+    #AgricultureTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+    }
+
+    /* Smooth transition */
+    #AgricultureTabs .exam-card-inner {
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .exam-card-box {
+        margin: 1rem;
+      }
+
+      .exam-card {
+        padding: 15px;
+      }
+
+      .exam-title {
+        font-size: 1.2rem;
+      }
+
+      .exam-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: inline-flex !important;
+        flex-direction: row !important;
+      }
+
+      .exam-item .exam-card-inner {
+        display: flex;
+        flex-direction: row !important;
+        /* Changed to row for image-text side by side */
+        align-items: center !important;
+        /* Center vertically */
+        padding: 0.75rem;
+        text-align: left;
+        width: 100%;
+      }
+
+      .exam-item img {
+        max-width: 60px;
+        margin-right: 1rem;
+        /* Space between image and text */
+        margin-bottom: 0;
+      }
+
+      .exam-item .text-container {
+        display: flex;
+        flex-direction: column !important;
+        flex-grow: 1;
+      }
+
+      .text-container p {
+        text-align: start !important;
+      }
+
+      .exam-item h5 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      .exam-item p {
+        font-size: 0.75rem;
+        opacity: 1;
+        max-height: none;
+        margin: 0;
+      }
+
+      .exam-card-inner:hover p {
+        max-height: none;
+      }
+
+      .exam-item .exam-card-inner:hover {
+        transform: none;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      #AgricultureTabs .nav-link:hover .exam-card-inner {
+        transform: none;
+        scale: 1;
+      }
+
+      #AgricultureTabs .nav-link.active .exam-card-inner {
+        background-color: #f0f7ff !important;
+        border: 2px solid #0d6efd !important;
+      }
+    }
+  </style>
+
+  <!-- Heading -->
+  <div class="exam-card-box m-5">
+    <div class="exam-card text-center" style="background-color: var(--perfect-blue);">
+      <h4 class="exam-title">Agriculture Exams</h4>
+    </div>
+  </div>
+
+
+  <!-- Exam Cards Grid -->
+  <div class="container my-5" id="AgricultureTabs" role="tablist">
+
+    <div class="row justify-content-center g-4" role="presentation">
+
+      <!-- AIEFA -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+        <button id="AIEFA-tab" data-bs-toggle="tab" data-bs-target="#AIEFA" type="button" role="tab"
+          aria-controls="AIEFA" aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Agriculture/AllIndiaExamforAgriculture-min.jpg" alt="AIEFA">
+
+            <div class="text-container">
+              <h5>ICAR AIEFA</h5>
+              <p>All India Exam for Agriculture</p>
+            </div>
+
+          </div>
+
+        </button>
+      </div>
+
+      <!-- TSEAMCET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+
+        <button id="TSEAMCET-tab" data-bs-toggle="tab" data-bs-target="#TSEAMCET" type="button" role="tab"
+          aria-controls="TSEAMCET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Agriculture/TS EAMCET-min.jpg" alt="TS EAMCET">
+            <div class="text-container">
+              <h5>TS EAMCET</h5>
+              <p>Telangana State Engineering, Agriculture and Medical Common Entrance Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- APEAMCET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+        <button id="APEAMCET-tab" data-bs-toggle="tab" data-bs-target="#APEAMCET" type="button" role="tab"
+          aria-controls="APEAMCET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Agriculture/AP EAMSET-min.jpg" alt="AP EAMCET">
+            <div class="text-container">
+              <h5>AP EAMCET</h5>
+              <p>Andhra Pradesh Engineering, Agriculture and Pharmacy Common Entrance Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!-- Agriculture box end-->
+
+
+
+  <!-- Agriculture contents -->
+  <div class="tab-content" id="AgricultureTabs">
+
+    <!-- AIEFA -->
+    <div class="tab-pane fade show active container my-5" id="AIEFA" role="tabpanel">
+
+
+      <section class="container my-4">
+        <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+          <div class="col">
+            <h3>Start Your Agriculture Career with <span>ICAR AIEEA</span></h3>
+            <p class="mt-2 mb-0">
+              ICAR AIEEA, conducted by NTA, is the gateway for undergraduate admissions to Agriculture and Science
+              courses<br>
+              through ICAR, with exams like CUET and AGRICET also playing a crucial role in shaping your future in
+              agriculture.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-4">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-lg-8 mb-4">
+            <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+              <h4 class="text-center text-light fw-bold p-3 m-0">
+                All India Exam for Agriculture (ICAR AIEEA)
+              </h4>
+            </div>
+
+            <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+              <h5 class="mb-4 ">
+                <i class="bi bi-file-earmark-text"></i> ICAR AIEEA – Agriculture Entrance Exam
+              </h5>
+
+              <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                      NTA on behalf of ICAR
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                      10+2 Science (Physics, Chemistry, Biology)<br>
+                      with minimum 50% aggregate (varies)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                      15% UG, 25% PG & PhD at Agricultural Universities
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                      UG: ₹1,000 (General) / ₹900 (OBC/EWS)<br>
+                      ₹800 (SC/ST/PwD) / ₹4,500 (Abroad)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                      June
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                      Computer-Based Test (CBT)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Emerging Students:</strong><br>
+                      2022 UG: 61,051 appeared<br>
+                      2024 PG: 41,148 appeared
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-4">
+            <div class="img-zoom-container shadow-sm">
+              <img src="./assets/img/right-side-image.jpg" alt="ICAR AIEEA"
+                class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .hero h3 {
+          font-size: 1.75rem;
+          font-weight: 600;
+        }
+
+        .hero p {
+          font-size: 1rem;
+          color: #cacaca;
+        }
+
+        .card-hover {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .img-zoom-container {
+          overflow: hidden;
+          border-radius: 12px;
+        }
+
+        .img-zoom-container img {
+          transition: transform 0.4s ease;
+        }
+
+        .img-zoom-container:hover img {
+          transform: scale(1.08);
+        }
+      </style>
+    </div>
+
+
+
+
+    <!-- TS EAMCET -->
+    <div class="tab-pane fade container" id="TSEAMCET" role="tabpanel">
+      <section class="container my-4">
+        <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+          <div class="col">
+            <h3>Explore <span>Engineering, Agriculture & Pharmacy</span> with TS EAMCET</h3>
+            <p class="mt-2 mb-0">
+              TS EAMCET is a state-level exam for admission to B.Tech, Agriculture, and Pharmacy programs<br>
+              in Telangana, conducted annually by JNTU Hyderabad on behalf of the Telangana State Council.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-4">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-lg-8 mb-4">
+            <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+              <h4 class="text-center text-light fw-bold p-3 m-0">
+                TS EAMCET – Telangana State Engineering, Agriculture and Medical Common Entrance Test
+              </h4>
+            </div>
+
+            <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+              <h5 class="mb-4">
+                <i class="bi bi-mortarboard-fill"></i> TS EAMCET – Engineering, Agriculture & Medical Common Entrance
+              </h5>
+
+              <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                      JNTU Hyderabad on behalf of TSCHE
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                      10+2 with minimum 45% (40% for reserved categories)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                      85,756 engineering seats + agriculture programs
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                      ₹900 (General), ₹500 (SC/ST/PH)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                      April & May (Annual)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                      Online Computer-Based Test (CBT)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                      3,20,587 registered<br>
+                      (2,05,295 Engineering | 1,15,292 Agri/Medical)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-4">
+            <div class="img-zoom-container shadow-sm">
+              <img src="./assets/img/right-side-image.jpg" alt="TS EAMCET"
+                class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .hero h3 {
+          font-size: 1.75rem;
+          font-weight: 600;
+        }
+
+        .hero p {
+          font-size: 1rem;
+          color: #cacaca;
+        }
+
+        .card-hover {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .img-zoom-container {
+          overflow: hidden;
+          border-radius: 12px;
+        }
+
+        .img-zoom-container img {
+          transition: transform 0.4s ease;
+        }
+
+        .img-zoom-container:hover img {
+          transform: scale(1.08);
+        }
+      </style>
+
+
+    </div>
+
+    <!-- AP EAMCET -->
+    <div class="tab-pane fade container" id="APEAMCET" role="tabpanel">
+      <section class="container my-4">
+        <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+          <div class="col">
+            <h3>Pursue <span>UG Programs in Andhra Pradesh</span> with AP EAPCET</h3>
+            <p class="mt-2 mb-0">
+              AP EAPCET is the state-level entrance exam for engineering, agriculture, and pharmacy<br>
+              programs in Andhra Pradesh, conducted by JNTU Kakinada for APSCHE.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-4">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-lg-8 mb-4">
+            <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+              <h4 class="text-center text-light fw-bold p-3 m-0">
+                AP EAMCET – Andhra Pradesh Engineering, Agriculture and Pharmacy Common Entrance Test
+              </h4>
+            </div>
+
+            <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+              <h5 class="mb-4">
+                <i class="bi bi-mortarboard-fill"></i> AP EAMCET – Engineering, Agriculture & Pharmacy Entrance
+              </h5>
+
+              <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                      JNTU Kakinada on behalf of APSCHE
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                      10+2 passed or appearing (AP/TS Board or equivalent)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                      1,43,254 engineering seats (1,38,972 private colleges)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                      ₹600 (General), ₹550 (BC), ₹500 (SC/ST)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                      May (Once a year)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                      Computer-Based Test (CBT)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                    <p class="mb-0">
+                      <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                      2,24,724 appeared, 1,71,514 qualified (Engineering)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-4">
+            <div class="img-zoom-container shadow-sm">
+              <img src="./assets/img/right-side-image.jpg" alt="AP EAPCET"
+                class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .hero h3 {
+          font-size: 1.75rem;
+          font-weight: 600;
+        }
+
+        .hero p {
+          font-size: 1rem;
+          color: #cacaca;
+        }
+
+        .card-hover {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .img-zoom-container {
+          overflow: hidden;
+          border-radius: 12px;
+        }
+
+        .img-zoom-container img {
+          transition: transform 0.4s ease;
+        }
+
+        .img-zoom-container:hover img {
+          transform: scale(1.08);
+        }
+      </style>
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+  <!-- Agriculture contents end -->
+
+
+
+
+
+  <!-- Agriculture info Box -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-12">
+        <div class="content-box p-4 shadow-sm rounded-4 bg-white">
+          <h4 class="text-center mb-4">
+            <i class="bi bi-flower1 me-2"></i>Agriculture: Cultivating Knowledge, Nourishing the Nation
+          </h4>
+
+          <p>
+            <i class="bi bi-globe-americas me-2"></i>
+            <span><strong>Vital Careers:</strong> Agriculture drives food security, sustainability, and growth in
+              agri-tech industries.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-award-fill me-2"></i>
+            <span><strong>Entrance Pathways:</strong> Gain admission via ICAR AIEEA, TS EAMCET, or AP EAMCET.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-journal-check me-2"></i>
+            <span><strong>Direct Admission:</strong> Tamil Nadu offers B.Sc. Agriculture through TNAU UG Counselling
+              based on +2 marks, no entrance exam.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-book-half me-2"></i>
+            <span><strong>Specialized Degrees:</strong> Pursue Horticulture, Food Technology, Sericulture, or
+              Agricultural Engineering at TNAU, PJTSAU, or ANGRAU.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-telephone-fill me-2"></i>
+            <span><strong>Get Expert Help:</strong> Visit <a href="https://mustknowcolleges.com"
+                target="_blank">MustKnowColleges.com</a> or WhatsApp us at <a href="https://wa.me/919585222121"
+                target="_blank">9585222121</a> for cutoffs and guidance.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer"></div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Javascript -->
+
+  <script src="./assets/js/boostrap.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

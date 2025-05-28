@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mustknowcollege</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Css -->
+
+  <link rel="stylesheet" href="./assets/css/boostrap.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <style>
+   :root {
+      --pry-clr: #10263D;
+      --sec-clr: #001b36;
+      --gray-clr: #464646;
+      --perfect-blue: #0f457f;
+    }
+
+    .icon-img {
+      width: 50% !important;
+    }
+
+    .card {
+      background-color: var(--pry-clr);
+      color: #ffff;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+
+
+  <div id="header"></div>
+
+
+  <!-- hero -->
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      display: flex;
+      background-image: url(./assets/new-img/enterexam-bg-banner.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3 text-capitalize">
+       <h3>Discover <span> Law </span> for Hands on Career Training</h3>
+         <p>Explore vocational programs and practical education options that <br> lead directly to employment in high-demand
+      fields</p>
+    </div>
+  </section>
+
+  <!-- hero end-->
+
+ 
+
+  <!-- LaW box -->
+
+  <style>
+    .exam-card-box {
+      display: flex;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+
+    .exam-card {
+      background-color: var(--pry-clr, #0d6efd);
+      /* Fallback to blue if --pry-clr is undefined */
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 1rem;
+      padding: 20px;
+      color: white;
+    }
+
+    .exam-title {
+      font-weight: 700;
+      color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .exam-item .exam-card-inner {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .exam-item img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .exam-item p {
+      font-size: 0.85rem;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .exam-item p {
+        font-size: 0.8rem;
+      }
+
+      .exam-item img {
+        max-width: 100px;
+      }
+    }
+
+    .exam-card-inner p {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease, max-height 1s ease;
+    }
+
+    .exam-card-inner:hover p {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    /* Hover effect */
+    #LaWTabs .nav-link:hover .exam-card-inner {
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      scale: 1.02;
+    }
+
+    /* Active (selected) effect */
+    #LaWTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+    }
+
+    /* Smooth transition */
+    #LaWTabs .exam-card-inner {
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .exam-card-box {
+        margin: 1rem;
+      }
+
+      .exam-card {
+        padding: 15px;
+      }
+
+      .exam-title {
+        font-size: 1.2rem;
+      }
+
+      .exam-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: inline-flex !important;
+        flex-direction: row !important;
+      }
+
+      .exam-item .exam-card-inner {
+        display: flex;
+        flex-direction: row !important;
+        /* Changed to row for image-text side by side */
+        align-items: center !important;
+        /* Center vertically */
+        padding: 0.75rem;
+        text-align: left;
+        width: 100%;
+      }
+
+      .exam-item img {
+        max-width: 60px;
+        margin-right: 1rem;
+        /* Space between image and text */
+        margin-bottom: 0;
+      }
+
+      .exam-item .text-container {
+        display: flex;
+        flex-direction: column !important;
+        flex-grow: 1;
+      }
+
+      .text-container p {
+        text-align: start !important;
+      }
+
+      .exam-item h5 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      .exam-item p {
+        font-size: 0.75rem;
+        opacity: 1;
+        max-height: none;
+        margin: 0;
+      }
+
+      .exam-card-inner:hover p {
+        max-height: none;
+      }
+
+      .exam-item .exam-card-inner:hover {
+        transform: none;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      #LaWTabs .nav-link:hover .exam-card-inner {
+        transform: none;
+        scale: 1;
+      }
+
+      #LaWTabs .nav-link.active .exam-card-inner {
+        background-color: #f0f7ff !important;
+        border: 2px solid #0d6efd !important;
+      }
+    }
+  </style>
+
+  <!-- Heading -->
+  <div class="exam-card-box m-5">
+    <div class="exam-card text-center" style="background-color: var(--perfect-blue);">
+      <h4 class="exam-title">Law</h4>
+    </div>
+  </div>
+
+
+  <!-- Exam Cards Grid -->
+  <div class="container my-5" id="LaWTabs" role="tablist">
+
+    <div class="row justify-content-center g-4" role="presentation">
+
+      <!-- CLAT -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+        <button id="CLAT-tab" data-bs-toggle="tab" data-bs-target="#CLAT" type="button" role="tab"
+          aria-controls="CLAT" aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/img/MedicalandLifeScience.png" alt="CLAT">
+
+            <div class="text-container">
+              <h5>CLAT</h5>
+              <p>Common Law Admission Test</p>
+            </div>
+
+          </div>
+
+        </button>
+      </div>
+
+      <!-- AILET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+
+        <button id="AILET-tab" data-bs-toggle="tab" data-bs-target="#AILET" type="button" role="tab"
+          aria-controls="AILET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/img/MedicalandLifeScience.png" alt="AILET">
+            <div class="text-container">
+              <h5>AILET</h5>
+              <p>All India Law Entrance Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- SLAT -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+        <button id="SLAT-tab" data-bs-toggle="tab" data-bs-target="#SLAT" type="button" role="tab"
+          aria-controls="SLAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/img/MedicalandLifeScience.png" alt="SLAT">
+            <div class="text-container">
+              <h5>SLAT</h5>
+              <p>Symbiosis Law Admission Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!-- LaW box end-->
+  
+
+
+  <!-- Agriculture contents -->
+  <div class="tab-content" id="LawTabs">
+
+    <!-- CLAT -->
+    <div class="tab-pane fade show active container my-5" id="CLAT" role="tabpanel">
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Pursue Your Legal Career with <span>CLAT</span></h3>
+      <p class="mt-2 mb-0">
+        CLAT is a national-level entrance exam for admission to UG and PG law programs at 24 prestigious National Law Universities (NLUs) in India,<br>
+        conducted by the Consortium of National Law Universities (CNLU).
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          CLAT – Common Law Admission Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-file-earmark-text"></i> CLAT – Common Law Admission Test
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Consortium of National Law Universities (CNLU)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Completed Class 12<br>
+                General: 45% marks<br>
+                SC/ST: 40% marks
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                3,213 UG seats (5-year program)<br>
+                1,217 PG seats (1-year program)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                Gen/OBC/EWS: ₹4,000–₹4,500<br>
+                SC/ST/PWD: ₹3,500–₹4,000
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                December
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Online Computer-Based Test (CBT)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                75,000+ registered<br>
+                96.36% attendance (~72,270 appeared)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="CLAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+
+    
+    </div>
+
+
+
+
+    <!-- AILET -->
+    <div class="tab-pane fade container" id="AILET" role="tabpanel">
+  
+      <section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Embark on Your Legal Career with <span>AILET</span></h3>
+      <p class="mt-2 mb-0">
+        AILET is a national-level entrance exam conducted by National Law University, Delhi (NLU Delhi),<br>
+        for admission to undergraduate (B.A. LL.B. (Hons.)), postgraduate (LL.M.), and PhD law programs.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          AILET – All India Law Entrance Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4 ">
+          <i class="bi bi-file-earmark-text"></i> AILET – All India Law Entrance Test
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                National Law University Delhi (NLU Delhi)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                LL.B. or equivalent with 50% marks<br>(45% for SC/ST/PwD)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                110 BA LLB and 50 BCom LLB<br>70 LLM seats through AILET
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                Gen/OBC/EWS/Foreign/KM: ₹3,500<br>
+                SC/ST/PwD: ₹1,500
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                December
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Multiple-Choice Questions (MCQs)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                19,830 registered<br>18,717 appeared
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="AILET Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+
+
+    </div>
+
+    <!-- SLAT -->
+    <div class="tab-pane fade container" id="SLAT" role="tabpanel">
+    
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Join Leading Law Schools with <span>SLAT</span></h3>
+      <p class="mt-2 mb-0">
+        SLAT is a national-level entrance exam conducted by Symbiosis International (Deemed University)<br>
+        for admission to its four prestigious Symbiosis Law Schools (SLS) in Pune, Noida, Nagpur, and Hyderabad.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          SLAT – Symbiosis Law Admission Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-book-half"></i> SLAT – Entrance for BA LLB & BBA LLB Programs
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Symbiosis International (Deemed University)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Class 12 pass<br>45% (General), 40% (SC/ST)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                1080 seats across 4 campuses
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹2,250 per test<br>+ ₹1,000 per SLS program
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                December (Once a year)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Computer-Based Test (CBT)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Around 19,000 (for 2025)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="SLAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+  <!-- Agriculture contents end -->
+
+
+
+  <!-- law info -->
+
+  <!-- Law Content Box-->
+<!-- Law Content Box-->
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <div class="content-box">
+          <h4 class="text-center">
+            <i class="bi bi-balance-scale me-1"></i>Law: Defend Rights, Deliver Justice
+          </h4>
+
+          <p>
+            <i class="bi bi-people"></i>
+            <span><strong>High Aspirations:</strong>75,000+ students pursue Law after 12th, driven by passion for
+              justice, logic, and leadership.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-trophy"></i>
+      <span><strong>Top Entrance Exams:</strong> Get into NLUs, NALSAR, NLSIU, Symbiosis, and more via CLAT,
+              AILET, and SLAT.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-briefcase"></i>
+            <span><strong>Career Opportunities:</strong> Explore Corporate Law, Litigation, Civil Services, Legal Tech,
+              and International Law.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-journal-text"></i>
+       <span><strong>Expert Guidance:</strong> Find tips, cutoffs, rankings, and scholarship updates at <a
+                href="https://mustknowcolleges.com" target="_blank"
+                ><strong>MustKnowColleges.com</strong></a>.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-telephone"></i>
+        <span><strong>Start Now:</strong> WhatsApp us at <a href="https://wa.me/919585222121" target="_blank"
+                >9585222121</a> and begin your legal journey!</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- law info end-->
+
+
+
+
+
+
+
+  <div id="footer"></div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Javascript -->
+
+  <script src="./assets/js/boostrap.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
