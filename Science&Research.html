@@ -1,245 +1,1339 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>mustknowcollege</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mustknowcollege</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 
-    <!-- Css -->
 
-    <link rel="stylesheet" href="./assets/css/boostrap.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Css -->
+
+  <link rel="stylesheet" href="./assets/css/boostrap.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
-    <style>
-        body {
-      user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-  }
-  
-      </style>
+  <style>
+    :root {
+      --pry-clr: #10263D;
+      --sec-clr: #001b36;
+      --gray-clr: #464646;
+      --perfect-blue: #0f457f;
+    }
 
-    <style>
-      :root{
-    --pry-clr:#10263D;
-    --sec-clr:#FF8C42;
-    --gray-clr:#464646;
-}
-.icon-img{
-  width: 50% !important;
-}
-    </style>
-
-<style>
-  @media screen and(max-width:500px) {
+    .card {
+      background-color: var(--pry-clr);
+      color: #ffff;
+    }
+  </style>
 
 
-  .tamil-fontsize {
-    font-size: 21px !important;
-    
-}
-/* .group-img{
-    text-align: center !important;
-}
-.group-img img {
-            display: block !important;
-            margin: 0 auto !important;
-        }
-     */
-}
-
-        .card{
-            background-color: var(--pry-clr);
-            color: #ffff;
-        }
-        li:hover{
-            color: var(--sec-clr);
-        }
-        .list-unstyled li {
-            margin: 10px 0;
-        }
-        .footer {
-            background-color:var(--pry-clr); /* Dark background */
-            color: white;
-            padding: 20px 0;
-        }
-        .subscribe-btn {
-            background-color: #ff8c42;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-        }
-        .subscribe-btn:hover {
-            background-color: #e67730;
-        }
-        .social-icons a {
-            color: white;
-            font-size: 20px;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #ff8c42;
-        }
-      
-</style>
-    
 </head>
+
 <body>
-  
 
-    <!-- Navbar -->
 
-     
-    <div id="header"></div>
-  
+  <!-- Navbar -->
 
-      <!-- <div class="container owm-margin">
-        <div class="row">
-            <div class="col">
-              
-                <h5 class="text-center" style="color: #FF8C42;">Shape Your Future with Must Know Colleges!! (Career & Indian College Guidance | Study Abroad)</h5>
-                <p class="text-center text-clr "  >What to Study after 12th? A Comprehensive Guide to choose the Best Courses after 12th</p>
-            </div>
-        </div>
-      </div> -->
-      <section class="hero">
-        <h3>Discover <span style="color: var(--sec-clr);"> Science & Research
+
+  <div id="header"></div>
+
+
+
+  <!-- hero -->
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      background: url('./assets/new-img/enterexam-bg-banner.jpg') center/cover no-repeat;
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3 text-capitalize">
+      <h3>Discover <span> Science & Research
         </span> for Hands on Career Training</h3>
-        <p>Explore vocational programs and practical education options that <br> lead directly to employment in high-demand fields</p>
-    </section>
+      <p>Explore vocational programs and practical education options that <br> lead directly to employment in
+        high-demand
+        fields</p>
+    </div>
+  </section>
 
-      
+  <!-- hero end-->
+
+  <!-- science box -->
+
+  <style>
+    .exam-card-box {
+      display: flex;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+
+    .exam-card {
+      background-color: var(--pry-clr, #0d6efd);
+      /* Fallback to blue if --pry-clr is undefined */
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 1rem;
+      padding: 20px;
+      color: white;
+    }
+
+    .exam-title {
+      font-weight: 700;
+      color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .exam-item .exam-card-inner {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .exam-item img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .exam-item p {
+      font-size: 0.85rem;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .exam-item p {
+        font-size: 0.8rem;
+      }
+
+      .exam-item img {
+        max-width: 100px;
+      }
+    }
+
+    .exam-card-inner p {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease, max-height 1s ease;
+    }
+
+    .exam-card-inner:hover p {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    /* Hover effect */
+    #ScienceTabs .nav-link:hover .exam-card-inner {
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      scale: 1.02;
+    }
+
+    /* Active (selected) effect */
+    #ScienceTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+    }
+
+    /* Smooth transition */
+    #ScienceTabs .exam-card-inner {
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .exam-card-box {
+        margin: 1rem;
+      }
+
+      .exam-card {
+        padding: 15px;
+      }
+
+      .exam-title {
+        font-size: 1.2rem;
+      }
+
+      .exam-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: inline-flex !important;
+        flex-direction: row !important;
+      }
+
+      .exam-item .exam-card-inner {
+        display: flex;
+        flex-direction: row !important;
+        /* Changed to row for image-text side by side */
+        align-items: center !important;
+        /* Center vertically */
+        padding: 0.75rem;
+        text-align: left;
+        width: 100%;
+      }
+
+      .exam-item img {
+        max-width: 60px;
+        margin-right: 1rem;
+        /* Space between image and text */
+        margin-bottom: 0;
+      }
+
+      .exam-item .text-container {
+        display: flex;
+        flex-direction: column !important;
+        flex-grow: 1;
+      }
+
+      .text-container p {
+        text-align: start !important;
+      }
+
+      .exam-item h5 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      .exam-item p {
+        font-size: 0.75rem;
+        opacity: 1;
+        max-height: none;
+        margin: 0;
+      }
+
+      .exam-card-inner:hover p {
+        max-height: none;
+      }
+
+      .exam-item .exam-card-inner:hover {
+        transform: none;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      #ScienceTabs .nav-link:hover .exam-card-inner {
+        transform: none;
+        scale: 1;
+      }
+
+      #ScienceTabs .nav-link.active .exam-card-inner {
+        background-color: #f0f7ff !important;
+        border: 2px solid #0d6efd !important;
+      }
+    }
+  </style>
+
+  <!-- Heading -->
+  <div class="exam-card-box m-5">
+    <div class="exam-card text-center" style="background-color: var(--perfect-blue);">
+      <h4 class="exam-title">Science & Research Exams</h4>
+    </div>
+  </div>
 
 
-    <div class="container mt-4">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="card">
-              <h4 class="text-center p-2 fw-bold" style="color: #fff;"> Science & Research Exams</h4>
+  <!-- Exam Cards Grid -->
+  <div class="container my-5" id="ScienceTabs" role="tablist">
+
+    <div class="row justify-content-center g-4" role="presentation">
+
+      <!-- ISERS -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+        <button id="ISERS-tab" data-bs-toggle="tab" data-bs-target="#ISERS" type="button" role="tab"
+          aria-controls="ISERS" aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Science & Research/IISER-min.jpg" alt="ISERS">
+
+            <div class="text-container">
+              <h5>ISERS</h5>
+              <p>IISERs BS-MS Admission Exam</p>
             </div>
-            <div class="card mt-2 p-4">
-              <div class="row g-3">
-                <!-- Drawing -->
-                <div class="col-md-3">
-                  <a href="./iiser.html"  class="text-decoration-none d-flex flex-column align-items-center">
-                    <img src="./assets/Science & Research/IISER-min.jpg" class="img-fluid rounded " alt="Drawing" style=" width: 70%; align-items: center;" >
-                    <p class="mt-2 text-center  text-white" style="font-size: 13px;"> IISERs BS-MS Admission Exam
-                    </p>
-                  </a>
-                </div>
-                <!-- Music -->
-                <div class="col-md-3">
-                  <a href="./nest.html" class="text-decoration-none d-flex flex-column align-items-center">
-                    <img src="./assets/Science & Research/NEST-min.jpg" class="img-fluid rounded" alt="Music" style=" width: 70%; ">
-                    <p class="mt-2 text-center  text-white" style="font-size: 13px;">NEST – National Entrance Screening Test
-                    </p>
-                  </a>
-                </div>
-                <!-- Singing -->
-                <div class="col-md-3">
-                  <a href="./ugee.html" class="text-decoration-none d-flex flex-column align-items-center">
-                    <img src="./assets/Science & Research/UGEE-SAT-min.jpg" class="img-fluid rounded" alt="Singing" style=" width: 70%; ">
-                    <p class="mt-2 text-center  text-white" style="font-size: 13px;">UGEE/SAT – IIIT-H Undergraduate Entrance Exam / Scholastic Aptitude Test
-                    </p>
-                  </a>
-                </div>
-                <!-- Sports -->
-                <div class="col-md-3">
-                  <a href="./csir-net.html" class="text-decoration-none d-flex flex-column align-items-center">
-                    <img src="./assets/Science & Research/CSIRNET-min.jpg" class="img-fluid rounded" alt="Sports" style=" width: 70%; " >
-                    <p class="mt-2 text-center  text-white" style="font-size: 13px;">CSIR NET – Council of Scientific & Industrial Research – National Eligibility Test
-                    </p>
-                  </a>
-                </div>
 
-                <div class="col-md-3">
-                  <a href="./ugc-net.html" class="text-decoration-none d-flex flex-column align-items-center">
-                    <img src="./assets/Science & Research/UGCNET-min.jpg" class="img-fluid rounded" alt="Sports" style=" width: 70%; " >
-                    <p class="mt-2 text-center  text-white" style="font-size: 13px;">UGC NET – University Grants Commission – National Eligibility Test
-                    </p>
-                  </a>
-                </div>
+          </div>
 
-                
-                  
+        </button>
+      </div>
+
+      <!-- NEST -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+
+
+        <button id="NEST-tab" data-bs-toggle="tab" data-bs-target="#NEST" type="button" role="tab" aria-controls="NEST"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Science & Research/NEST-min.jpg" alt="NEST">
+            <div class="text-container">
+              <h5>NEST</h5>
+              <p>NEST – National Entrance Screening Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- UGEE/SAT -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+        <button id="UGEE/SAT-tab" data-bs-toggle="tab" data-bs-target="#UGEE/SAT" type="button" role="tab"
+          aria-controls="UGEE/SAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Science & Research/UGEE-SAT-min.jpg" alt="UGEE/SAT">
+            <div class="text-container">
+              <h5>UGEE/SAT</h5>
+              <p>UGEE/SAT – IIIT-H Undergraduate
+                Entrance Exam / Scholastic Aptitude Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- CSIR NET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+        <button id="CSIRNET-tab" data-bs-toggle="tab" data-bs-target="#CSIRNET" type="button" role="tab"
+          aria-controls="CSIRNET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Science & Research/CSIRNET-min.jpg" alt="CSIR NET">
+            <div class="text-container">
+              <h5>CSIR NET</h5>
+              <p>CSIR NET – Council of Scientific &
+                Industrial Research – National Eligibility Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- UGC NET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+
+        <button id="UGCNET-tab" data-bs-toggle="tab" data-bs-target="#UGCNET" type="button" role="tab"
+          aria-controls="UGCNET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Science & Research/UGCNET-min.jpg" alt="UGC NET">
+            <div class="text-container">
+              <h5>UGC NET</h5>
+              <p>UGC NET – University Grants Commission
+                – National Eligibility Test</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!-- science box end-->
+
+
+
+  <!-- Agriculture contents -->
+  <div class="tab-content" id="ScienceTabs">
+
+    
+
+    <!-- IISER -->
+    <div class="tab-pane fade show active container my-5" id="ISERS" role="tabpanel">
+
+      <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Pursue Dual Degree in Science with <span>IISER IAT</span></h3>
+        <p class="mt-2 mb-0">
+          The IISER Aptitude Test (IAT) is the exclusive entrance exam for the 5-year BS-MS<br>
+          dual degree program at the Indian Institutes of Science Education and Research (IISERs).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IISER IAT Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            IISER IAT – Indian Institutes of Science Education and Research Aptitude Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard-fill"></i> IISER IAT – BS-MS, BS, and BTech Programs
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                  IISERs
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 (Eligibility) -->
+            <div class="col-12">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                  Class 12 with Biology, Chemistry, Maths, or Physics<br>
+                  Gen/OBC/EWS: 60% aggregate<br>
+                  SC/ST/PwD: 55% aggregate
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                  2,363 across 7 IISERs
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                  Gen/EWS/OBC: ₹2,000<br>
+                  SC/ST/PwD/KM: ₹1,000
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                  May
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                  Computer-Based Test (CBT)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                  ~2 Lakh apply, 40% clear
+                </p>
               </div>
             </div>
           </div>
-      
-          <div class="col-lg-4 group-img">
-            <!-- <img src="./assets/img/right-side-image.jpg" alt="" style="border-radius: 10px;" width="100%" class="img-fluid d-block mx-lg-0 mx-auto"> -->
-            <div class="content-box p-4 shadow-sm rounded-4 bg-white" style="border: 1px solid #e3e6e8;">
-              <h4 class="mb-4 text-center fw-bold" style="color: #10263D;">
-                <i class="bi bi-microscope me-2" style="color: #FF8C42;"></i>Science & Research: Explore, Experiment, Excel
-              </h4>
-            
-              <p class="d-flex align-items-start mb-3">
-                <i class="bi bi-globe2 me-3" style="color: #FF8C42; font-size: 1.5rem;"></i>
-                <span><strong>Global Ranking:</strong> India ranks among the top 3 countries in scientific publications and invests ₹8,000+ crore annually in R&D.</span>
-              </p>
-            
-              <p class="d-flex align-items-start mb-3">
-                <i class="bi bi-award-fill me-3" style="color: #FF8C42; font-size: 1.5rem;"></i>
-                <span><strong>Top Institutes:</strong> IISERs, NISER, IIIT-H admit students via IISER Aptitude Test, NEST, UGEE/SAT; CSIR NET and UGC NET award 25,000+ fellowships yearly.</span>
-              </p>
-            
-              <p class="d-flex align-items-start mb-3">
-                <i class="bi bi-lightbulb-fill me-3" style="color: #FF8C42; font-size: 1.5rem;"></i>
-                <span><strong>Fields of Discovery:</strong> Dive into Physics, Biology, Chemistry, Data Science, Earth Sciences, AI, Climate Tech, and more.</span>
-              </p>
-            
-              <p class="d-flex align-items-start mb-3">
-                <i class="bi bi-journal-richtext me-3" style="color: #FF8C42; font-size: 1.5rem;"></i>
-                <span><strong>Expert Guidance:</strong> Get prep plans, institute rankings, fellowship info, and career mapping at <a href="https://mustknowcolleges.com" target="_blank" style="color: #FF8C42; text-decoration: underline;"><strong>MustKnowColleges.com</strong></a>.</span>
-              </p>
-            
-              <p class="d-flex align-items-start">
-                <i class="bi bi-telephone-forward-fill me-3" style="color: #FF8C42; font-size: 1.5rem;"></i>
-                <span><strong>Start Exploring:</strong> WhatsApp us at <a href="https://wa.me/919585222121" target="_blank" style="color: #FF8C42; text-decoration: underline;">9585222121</a> and launch your journey into research excellence!</span>
-              </p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Science & Research/IISER-min.jpg" alt="IISER IAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .hero h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #cacaca;
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-zoom-container {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .img-zoom-container img {
+      transition: transform 0.4s ease;
+    }
+
+    .img-zoom-container:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+
+
+
+    </div>
+
+    <!-- NEST -->
+   <!-- NEST Tab Panel -->
+<div class="tab-pane fade container my-5" id="NEST" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Join Top Science Institutes via <span>NEST</span></h3>
+        <p class="mt-2 mb-0">
+          The National Entrance Screening Test (NEST) is the gateway to the 5-year Integrated MSc<br>
+          program at NISER Bhubaneswar and UM–DAE CEBS, Mumbai in Biology, Chemistry, Math & Physics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEST Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            NEST – National Entrance Screening Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-flask"></i> NEST – 5-Year Integrated MSc Programs
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                  NISER & UM-DAE CEBS
+                </p>
+              </div>
             </div>
-            
+
+            <!-- Card 2 (Eligibility) -->
+            <div class="col-12">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                  Class 12 (Science)<br>
+                  Gen/OBC: 60% aggregate<br>
+                  SC/ST/Divyangjan: 55% aggregate<br>
+                  Qualify NEST 2025 merit list
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                  257 (200 NISER, 57 CEBS)
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                  Male/UR/OBC: ₹1,400<br>
+                  Female/SC/ST/Divyangjan: ₹700
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong>
+                  June
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right"></i> <strong>Exam Mode:</strong>
+                  Online CBT
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong>
+                  25–30K candidates
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Science & Research/NEST-min.jpg" alt="NEST Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<style>
+    .hero h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+      color: #cacaca;
+    }
+
+    .content-box {
+      background-color: #ffffff;
+      border: 1px solid #e3e6e8;
+      box-shadow: 0 0px 0px rgba(0, 0,0, 0.05);
+      border-radius: 1rem;
+      padding: 0rem;
+      transition: all 0.0s ease-in-out;
+    }
+
+    .card-content-box {
+      transform: none;
+    }
+
+    .card-hover {
+      transform: none;
+      transition: transform 0s ease-in-out, box-shadow 0s ease-in-out;
+    }
+
+    .img-zoom-container {
+      transition: none;
+      border-radius: 0;
+    }
+    .img-zoom img {
+      width: 0%;
+      height: transform none;
+      transition: transform 0s ease-in-out;
+    }
+
+  </style>
+</div>
+
+    <!-- UGEE/SAT -->
+    <!-- UGEE/SAT Tab Panel -->
+<div class="tab-pane fade container my-5" id="UGEE/SAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Shape Your Tech Future at IIIT-H via <span>UGEE/SAT</span></h3>
+        <p class="mt-2 mb-0">
+          IIIT Hyderabad’s UGEE/SAT route offers admission to B.Tech programs through a 3-hour<br>
+          computer-based exam with SUPR (Subject Proficiency) and REAP (Research Aptitude) sections.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- UGEE/SAT Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            UGEE/SAT – IIIT Hyderabad Undergraduate Entrance Exam
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-laptop"></i> UGEE/SAT – Research-Oriented B.Tech Programs
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                  IIIT Hyderabad
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 (Eligibility) -->
+            <div class="col-12">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                  Class 12 with PCM<br>
+                  Min. 60% in Physics, Chemistry, Maths
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                  100–120 admissions
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                  Male: ₹3,000<br>
+                  Female: ₹1,500
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                  April
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 (Exam Mode) -->
+            <div class="col-12">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                  CBT: SUPR (60 min), REAP (120 min)<br>
+                  25% negative marking
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                  30–60K annually
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Science & Research/UGEE-SAT-min.jpg" alt="UGEE/SAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .hero h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #cacaca;
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-zoom-container {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .img-zoom-container img {
+      transition: transform 0.4s ease;
+    }
+
+    .img-zoom-container:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+</div>
+
+    <!-- CSIRNET -->
+ <!-- CSIR NET Tab Panel -->
+<div class="tab-pane fade container my-5" id="CSIRNET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Build a Research & Academic Career via <span>CSIR NET</span></h3>
+        <p class="mt-2 mb-0">
+          The CSIR NET, conducted by NTA, qualifies candidates for Junior Research Fellowships (JRF) and<br>
+          Lectureships/Assistant Professorships in science and technology across Indian universities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSIR NET Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            CSIR NET – National Eligibility Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-award-fill"></i> CSIR NET – JRF and Lectureship
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                  NTA
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                  M.Sc. or equiv.<br>
+                  Gen/OBC: 55% marks<br>
+                  SC/ST/PwD: 50% marks
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                  ~600–700 Lectureships
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                  Gen: ₹1,150<br>
+                  OBC-NCL: ₹600<br>
+                  SC/ST/PwD: ₹325
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                  June, December
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                  CBT
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>
+                  ~1.6L appeared
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Science & Research/CSIRNET-min.jpg" alt="CSIR NET Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .hero h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #cacaca;
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-zoom-container {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .img-zoom-container img {
+      transition: transform 0.4s ease;
+    }
+
+    .img-zoom-container:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+</div>
+
+
+<!-- UGC NET Tab Panel -->
+<div class="tab-pane fade container my-5" id="UGCNET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Qualify for Academia & Research with <span>UGC NET</span></h3>
+        <p class="mt-2 mb-0">
+          The UGC NET, conducted by NTA, determines eligibility for Assistant Professorships and<br>
+          Junior Research Fellowships (JRF) across Indian universities and colleges.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- UGC NET Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3" style="background-color: var(--); border-radius: 12px;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            UGC NET – National Eligibility Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+          <h5 class="mb-4">
+            <i class="bi bi-bookmark-check-fill"></i> UGC NET – Assistant Professorship and JRF
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                  NTA
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                  Master’s degree<br>
+                  Gen: 55% marks
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                  ~5K JRF + Asst. Prof.<br>
+                  ~48K Asst. Prof.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                  Gen: ₹1,150<br>
+                  OBC/EWS: ₹600<br>
+                  SC/ST/PwD: ₹325
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                  June, December
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                  CBT
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0">
+                  <i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>
+                  ~6.5L appeared
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Science & Research/UGCNET-min.jpg" alt="UGC NET Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .hero h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #cacaca;
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-zoom-container {
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .img-zoom-container img {
+      transition: transform 0.4s ease;
+    }
+
+    .img-zoom-container:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+</div>
 
 
 
+  </div>
+
+  <!-- Agriculture contents end -->
 
 
 
-<div id="footer"></div>
- 
+  <!-- science and research info -->
+
+  <style>
+    .content-box {
+      background-color: #ffffff;
+      border: 1px solid #e3e6e8;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .content-box h4 {
+      color: #10263D;
+      font-weight: 700;
+    }
+
+    .content-box p {
+      font-size: 1rem;
+      color: #2c3e50;
+      display: flex;
+      align-items: start;
+      margin-bottom: 1.25rem;
+    }
+
+    .content-box i {
+      font-size: 1.4rem;
+      color: #10263D;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .content-box a {
+      color: #10263D;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    @media (max-width: 576px) {
+      .content-box {
+        padding: 1.5rem;
+      }
+
+      .content-box p {
+        font-size: 0.95rem;
+      }
+
+      .content-box i {
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+      }
+    }
+    </style>
+
+  <div class="container">
+    <div class="row justify-content-md-center P-5">
+      <div class="col-md-auto">
+        <div class="content-box">
+          <h4 class="text-center">
+            <i class="bi bi-microscope me-2"></i>Science & Research: Explore, Experiment, Excel
+          </h4>
+
+          <p>
+            <i class="bi bi-globe2 me-2"></i>
+            <span><strong>Global Ranking:</strong> India ranks among the top 3 countries in scientific publications and
+              invests ₹8,000+ crore annually in R&D.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-award-fill me-3"></i>
+            <span><strong>Top Institutes:</strong> IISERs, NISER, IIIT-H admit students via IISER Aptitude Test, NEST,
+              UGEE/SAT; CSIR NET and UGC NET award 25,000+ fellowships yearly.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-lightbulb-fill me-3"></i>
+            <span><strong>Fields of Discovery:</strong> Dive into Physics, Biology, Chemistry, Data Science, Earth
+              Sciences, AI, Climate Tech, and more.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-journal-richtext me-3"></i>
+            <span><strong>Expert Guidance:</strong> Get prep plans, institute rankings, fellowship info, and career
+              mapping at <a href="https://mustknowcolleges.com"
+                target="_blank"><strong>MustKnowColleges.com</strong></a>.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-telephone-forward-fill me-3"></i>
+            <span><strong>Start Exploring:</strong> WhatsApp us at <a href="https://wa.me/919585222121"
+                target="_blank">9585222121</a> and launch your journey into research
+              excellence!</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- law info end-->
+
   
 
 
 
 
 
+  <div id="footer"></div>
 
 
 
-    <!-- Javascript -->
 
-    <script src="./assets/js/boostrap.js" ></script>
-    <script src="./assets/js/script.js"></script>
+
+
+
+
+
+
+  <!-- Javascript -->
+
+  <script src="./assets/js/boostrap.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
