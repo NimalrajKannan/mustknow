@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mustknowcollege</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+    <!-- Css -->
+
+    <link rel="stylesheet" href="./assets/css/boostrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <style>
+       
+  :root{
+    --pry-clr:#10263D;
+    --sec-clr:#FF8C42;
+    --gray-clr:#464646;
+    --perfect-blue: #0f457f;
+  }
+      </style>
+
+    
+    
+</head>
+<body>
+  
+
+    <!-- Navbar -->
+
+     
+    <div id="header"></div>
+  <!-- hero section -->
+    <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      display: flex;
+      background-image: url(./assets/new-img/enterexam-bg-banner.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3">
+      <h3>Discover <span> Education & Teaching
+        </span> for Hands on Career Training</h3>
+        <p>Explore vocational programs and practical education options that <br> lead directly to employment in high-demand fields</p>
+    </div>
+  </section>
+  <!-- hero section end-->
+
+
+
+
+  <!-- box content -->
+
+
+  <!-- Style -->
+<style>
+  .exam-card-box {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+
+  .exam-card {
+    background-color: var(--pry-clr, #0d6efd);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 20px;
+    color: white;
+  }
+
+  .exam-title {
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .exam-item .exam-card-inner {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+
+  .exam-item .exam-card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .exam-item img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .exam-item p {
+    font-size: 0.85rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .exam-item p {
+      font-size: 0.8rem;
+    }
+
+    .exam-item img {
+      max-width: 100px;
+    }
+  }
+
+  .exam-card-inner p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 1s ease;
+  }
+
+  .exam-card-inner:hover p {
+    opacity: 1;
+    max-height: 100px;
+  }
+
+  #educationTabs .nav-link:hover .exam-card-inner {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    scale: 1.02;
+  }
+
+  #educationTabs .nav-link.active .exam-card-inner {
+    background-color: #f0f7ff;
+    border: 2px solid #0d6efd;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+  }
+
+  #educationTabs .exam-card-inner {
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    .exam-card-box {
+      margin: 1rem;
+    }
+
+    .exam-card {
+      padding: 15px;
+    }
+
+    .exam-title {
+      font-size: 1.2rem;
+    }
+
+    .exam-item {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: inline-flex !important;
+      flex-direction: row !important;
+    }
+
+    .exam-item .exam-card-inner {
+      display: flex;
+      flex-direction: row !important;
+      align-items: center !important;
+      padding: 0.75rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    .exam-item img {
+      max-width: 60px;
+      margin-right: 1rem;
+      margin-bottom: 0;
+    }
+
+    .exam-item .text-container {
+      display: flex;
+      flex-direction: column !important;
+      flex-grow: 1;
+    }
+
+    .text-container p {
+      text-align: start !important;
+    }
+
+    .exam-item h5 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .exam-item p {
+      font-size: 0.75rem;
+      opacity: 1;
+      max-height: none;
+      margin: 0;
+    }
+
+    .exam-card-inner:hover p {
+      max-height: none;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: none;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #educationTabs .nav-link:hover .exam-card-inner {
+      transform: none;
+      scale: 1;
+    }
+
+    #educationTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+    }
+  }
+</style>
+<!-- Style End -->
+
+
+<!-- Head Text -->
+<div class="exam-card-box m-5">
+  <div class="exam-card text-center" style="background-color: var(--perfect-blue);">
+    <h4 class="exam-title">Education & Teaching Exams</h4>
+  </div>
+</div>
+<!-- Head Text End -->
+
+
+
+<!-- Tabbed Content -->
+<div class="container my-5" id="educationTabs" role="tablist">
+  <div class="row justify-content-center g-4" role="presentation">
+    <!-- Exam Cards -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="CTET-tab" data-bs-toggle="tab" data-bs-target="#CTET" type="button" role="tab" aria-controls="CTET" aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Education & Teaching/RIE-CEE-min.jpg" alt="CTET">
+          <div class="text-container">
+            <h5>CTET</h5>
+            <p>Central Teacher Eligibility Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="TET-tab" data-bs-toggle="tab" data-bs-target="#TET" type="button" role="tab" aria-controls="TET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Education & Teaching/CUTE PG-min.jpg" alt="TET">
+          <div class="text-container">
+            <h5>TET</h5>
+            <p>Teacher Eligibility Test (State-wise)</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="CUET-PG-tab" data-bs-toggle="tab" data-bs-target="#CUET-PG" type="button" role="tab" aria-controls="CUET-PG" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Education & Teaching/CUET-min.jpg" alt="CUET PG">
+          <div class="text-container">
+            <h5>CUET PG</h5>
+            <p>Common University Entrance Test (Education)</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="RIE-CEE-tab" data-bs-toggle="tab" data-bs-target="#RIE-CEE" type="button" role="tab" aria-controls="RIE-CEE" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Education & Teaching/RIE-CEE-min.jpg" alt="RIE CEE">
+          <div class="text-container">
+            <h5>RIE CEE</h5>
+            <p>Regional Institute of Education Common Entrance Exam</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Tabbed Content End -->
+ 
+
+
+<!-- box content end-->
+
+
+`
+
+<!-- box inside content -->
+<div class="tab-content" id="educationTabs">
+
+  <div class="tab-pane fade show active container my-5" id="CTET" role="tabpanel">
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>
+        Shape the Future with <span>CTET</span> – Education & Teaching
+      </h3>
+      <p class="mt-2 mb-0 text-white">
+        The Central Teacher Eligibility Test (CTET) is a national-level exam conducted by CBSE for teaching roles in Central Government schools.<br>
+        CTET certification is essential for educators and widely recognized by private institutions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          Central Teacher Eligibility Test (CTET)
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-mortarboard-fill"></i> CTET Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Central Board of Secondary Education (CBSE)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>12th with 45% marks<br>Graduation with 50% marks<br>Post-graduation with 55% marks</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>Approx. 50,000 to 1,00,000 annually</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>Gen/OBC: ₹1,000 (one paper), ₹1,200 (both)<br>SC/ST/PWD: ₹500 (one paper), ₹600 (both)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>July and December (Twice a year)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Offline (Pen-and-paper based)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>Registered: 6,86,197<br>Appeared: 5,72,489<br>Qualified: 1,38,389</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Education Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+<!-- 2 -->
+     <div class="tab-pane fade container" id="TET" role="tabpanel">
+      <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>
+        Empower Young Minds with <span>State TET</span> – Education & Teaching
+      </h3>
+      <p class="mt-2 mb-0 text-white">
+        The Teacher Eligibility Test (TET) is a state-level exam ensuring teachers meet standards for government schools.<br>
+        Conducted by state authorities, it qualifies candidates to educate the next generation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          Teacher Eligibility Test (TET – State-wise)
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-mortarboard-fill"></i> TET Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>Respective state governments or their designated bodies</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>12th or Graduation + relevant teacher training qualification</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>Varies by state and year</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>Tamil Nadu (TNTET): ₹500 (Gen), ₹250 (SC/ST/PWD)<br>Telangana (TSTET): ₹1,000<br>Maharashtra (MAHA TET): ₹1,000 (Gen)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>Varies by state</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Typically Offline (Pen-and-paper based)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>Tamil Nadu TET (2019):<br>Paper I: 1,62,316 appeared<br>Paper II: 3,79,735 appeared</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Education Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+<!-- 3-->
+     <div class="tab-pane fade container" id="CUET-PG" role="tabpanel">
+      <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>
+        Advance in Teaching with <span>CUET PG (Education)</span> – M.Ed. Programs
+      </h3>
+      <p class="mt-2 mb-0 text-white">
+        CUET PG (Education) is a national entrance exam by NTA for M.Ed. programs across India’s universities.<br>
+        It streamlines admissions to postgraduate education courses, shaping future educators.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          CUET PG (Education) – M.Ed. Programs
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-mortarboard-fill"></i> CUET PG (Education) Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>National Testing Agency (NTA)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>B.Ed., D.Ed., B.Sc.-B.Ed., or B.A.-B.Ed. with minimum 50% marks</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>Approx. 2,000–3,000 seats across universities</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>General: ₹1,200<br>OBC-NCL/EWS: ₹1,000<br>SC/ST/Third Gender: ₹900<br>International: ₹6,000</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>March and April</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Computer-Based Test (CBT) with MCQs</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>Approx. 15,000–20,000 annually</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Education Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+<!-- 4 -->
+     <div class="tab-pane fade container" id="RIE-CEE" role="tabpanel">
+      <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>
+        Shape the Future with <span>RIE CEE</span> – Education & Teaching
+      </h3>
+      <p class="mt-2 mb-0 text-white">
+        RIE CEE, conducted by NCERT, is a national entrance exam for B.Ed. and M.Ed. programs at RIEs.<br>
+        It equips future educators with essential pedagogical skills for teaching excellence.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          RIE CEE – Regional Institute of Education Common Entrance Exam
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> RIE CEE Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>National Council of Educational Research and Training (NCERT)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Bachelor's degree with minimum 50% marks (varies by program)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>Approx. 1,500–2,000 seats across RIE campuses</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>General/OBC: ₹900<br>SC/ST/PH: ₹450</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>June (Once a year)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Offline (Pen-and-Paper Based)</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>Approx. 19,547 candidates</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Education Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+</div>
+
+
+
+
+
+<!-- box inside content end -->
+
+
+
+      <!-- info section -->
+       <style>
+  .content-box {
+    background-color: #ffffff;
+    border: 1px solid #e3e6e8;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-box h4 {
+    color: #10263D;
+    font-weight: 700;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: start;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-box i {
+    font-size: 1.4rem;
+    color: #10263D;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  .content-box a {
+    color: #10263D;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  @media (max-width: 576px) {
+    .content-box {
+      padding: 1.5rem;
+    }
+
+    .content-box p {
+      font-size: 0.95rem;
+    }
+
+    .content-box i {
+      font-size: 1.2rem;
+      margin-right: 0.75rem;
+    }
+  }
+</style>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-12">
+      <div class="content-box">
+        <h4 class="text-center mb-4">
+          <i class="bi bi-book-fill me-2"></i>
+          Why Choose Education & Teaching?
+        </h4>
+
+        <p>
+          <i class="bi bi-graph-up-arrow"></i>
+          <span><strong>Growing Demand:</strong> Over 10 lakh teaching jobs projected in India by 2030 across schools and edtech platforms.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-award-fill"></i>
+          <span><strong>Key Exams:</strong> Qualify through CTET, State TETs, and CUET PG to start your teaching career.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-building"></i>
+          <span><strong>Top Institutions:</strong> Train at NCERT RIEs and Central Universities for leadership in education.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-journal-richtext"></i>
+          <span><strong>Career Impact:</strong> Shape future generations with skills in pedagogy and child development.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-telephone-outbound"></i>
+          <span><strong>Get Guidance:</strong> Explore exams, scholarships, and expert tips at
+            <a href="https://mustknowcolleges.com" target="_blank">MustKnowColleges.com</a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- info section end -->
+
+
+
+
+<div id="footer"></div>
+ 
+  
+
+
+
+
+
+
+
+
+    <!-- Javascript -->
+
+    <script src="./assets/js/boostrap.js" ></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

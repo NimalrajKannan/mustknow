@@ -1,0 +1,1653 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mustknowcollege</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+    <!-- Css -->
+
+    <link rel="stylesheet" href="./assets/css/boostrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <style>
+      :root{
+    --pry-clr:#10263D;
+    --sec-clr:#FF8C42;
+    --gray-clr:#464646;
+    --perfect-blue: #0f457f;
+}
+
+</style>
+    
+</head>
+<body>
+  
+
+    <!-- Navbar -->
+
+     
+    <div id="header"></div>
+  
+
+    <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      display: flex;
+      background-image: url(./assets/new-img/enterexam-bg-banner.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+    <!-- hero section -->
+  <section class="hero">
+    <div class="hero-content mx-3">
+      <h3>Discover <span>Commerce & General UG/PG Admission
+        </span> for Hands on Career Training</h3>
+        <p>Explore vocational programs and practical education options that <br> lead directly to employment in high-demand fields</p>
+    </div>
+  </section>
+  <!-- hero section end-->
+      
+
+  <!-- box content  -->
+
+<!-- Style -->
+<style>
+  .exam-card-box {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+
+  .exam-card {
+    background-color: var(--pry-clr, #0d6efd);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 20px;
+    color: white;
+  }
+
+  .exam-title {
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .exam-item .exam-card-inner {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+
+  .exam-item .exam-card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .exam-item img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .exam-item p {
+    font-size: 0.85rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .exam-item p {
+      font-size: 0.8rem;
+    }
+
+    .exam-item img {
+      max-width: 100px;
+    }
+  }
+
+  .exam-card-inner p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 1s ease;
+  }
+
+  .exam-card-inner:hover p {
+    opacity: 1;
+    max-height: 100px;
+  }
+
+  #educationTabs .nav-link:hover .exam-card-inner {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    scale: 1.02;
+  }
+
+  #educationTabs .nav-link.active .exam-card-inner {
+    background-color: #f0f7ff;
+    border: 2px solid #0d6efd;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+  }
+
+  #educationTabs .exam-card-inner {
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    .exam-card-box {
+      margin: 1rem;
+    }
+
+    .exam-card {
+      padding: 15px;
+    }
+
+    .exam-title {
+      font-size: 1.2rem;
+    }
+
+    .exam-item {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: inline-flex !important;
+      flex-direction: row !important;
+    }
+
+    .exam-item .exam-card-inner {
+      display: flex;
+      flex-direction: row !important;
+      align-items: center !important;
+      padding: 0.75rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    .exam-item img {
+      max-width: 60px;
+      margin-right: 1rem;
+      margin-bottom: 0;
+    }
+
+    .exam-item .text-container {
+      display: flex;
+      flex-direction: column !important;
+      flex-grow: 1;
+    }
+
+    .text-container p {
+      text-align: start !important;
+    }
+
+    .exam-item h5 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .exam-item p {
+      font-size: 0.75rem;
+      opacity: 1;
+      max-height: none;
+      margin: 0;
+    }
+
+    .exam-card-inner:hover p {
+      max-height: none;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: none;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #educationTabs .nav-link:hover .exam-card-inner {
+      transform: none;
+      scale: 1;
+    }
+
+    #educationTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+    }
+  }
+</style>
+<!-- Style End -->
+
+<!-- Head Text -->
+<div class="exam-card-box m-5">
+  <div class="exam-card text-center" style="background-color: var(--perfect-blue);">
+    <h4 class="exam-title">Commerce & Liberal Studies Exams</h4>
+  </div>
+</div>
+<!-- Head Text End -->
+
+<!-- Tabbed Content -->
+<div class="container my-5" id="educationTabs" role="tablist">
+  <div class="row justify-content-center g-4" role="presentation">
+    <!-- Exam Cards -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="CUET-tab" data-bs-toggle="tab" data-bs-target="#CUET" type="button" role="tab" aria-controls="CUET" aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Commerce & General UGPG Admission/AAT-min.jpg" alt="CUET">
+          <div class="text-container">
+            <h5>CUET</h5>
+            <p>Common University Entrance Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="SUAT-tab" data-bs-toggle="tab" data-bs-target="#SUAT" type="button" role="tab" aria-controls="SUAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Commerce & General UGPG Admission/SUAT-min.jpg" alt="SUAT">
+          <div class="text-container">
+            <h5>SUAT</h5>
+            <p>Sharda University Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="GSAT-tab" data-bs-toggle="tab" data-bs-target="#GSAT" type="button" role="tab" aria-controls="GSAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Commerce & General UGPG Admission/GSAT-GITAM-min.jpg" alt="GSAT">
+          <div class="text-container">
+            <h5>GSAT</h5>
+            <p>GITAM Science Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="TISSNET-tab" data-bs-toggle="tab" data-bs-target="#TISSNET" type="button" role="tab" aria-controls="TISSNET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Commerce & General UGPG Admission/TISSNET-min.jpg" alt="TISSNET">
+          <div class="text-container">
+            <h5>TISSNET</h5>
+            <p>TISS National Entrance Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="TISSBAT-tab" data-bs-toggle="tab" data-bs-target="#TISSBAT" type="button" role="tab" aria-controls="TISSBAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Commerce & General UGPG Admission/TISSBAT-min.jpg" alt="TISS BAT">
+          <div class="text-container">
+            <h5>TISS BAT</h5>
+            <p>TISS Bachelor’s Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="Ashoka-tab" data-bs-toggle="tab" data-bs-target="#Ashoka" type="button" role="tab" aria-controls="Ashoka" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Commerce & General UGPG Admission/AAT-min.jpg" alt="Ashoka Aptitude Test">
+          <div class="text-container">
+            <h5>Ashoka</h5>
+            <p>Ashoka Aptitude Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="FLAME-tab" data-bs-toggle="tab" data-bs-target="#FLAME" type="button" role="tab" aria-controls="FLAME" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Commerce & General UGPG Admission/FEAT-FLAME-min.jpg" alt="FLAME University Test">
+          <div class="text-container">
+            <h5>FLAME</h5>
+            <p>FLAME University Entrance Exam</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="NAT-tab" data-bs-toggle="tab" data-bs-target="#NAT" type="button" role="tab" aria-controls="NAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Commerce & General UGPG Admission/NAT-min.jpg" alt="NAT">
+          <div class="text-container">
+            <h5>NAT</h5>
+            <p>National Aptitude Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Tabbed Content End -->
+
+
+
+<!-- box content end -->
+
+
+
+
+<!-- box inside-->
+ <div class="tab-content" id="commerce&generalTabs">
+<!-- 1 -->
+  <div class="tab-pane fade show active container my-5" id="CUET" role="tabpanel">
+    
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>
+        Advance in Teaching with <span>CUET (Education)</span> – M.Ed. Programs
+      </h3>
+      <p class="mt-2 mb-0 text-white">
+        The Common University Entrance Test for Postgraduate programs (CUET) is a national-level entrance exam conducted by the National Testing Agency (NTA) for admissions to postgraduate programs across various universities in India. 
+        It's a unified platform that enables multiple universities to select candidates for their M.Ed. programs, streamlining the path to higher education in teaching and education sciences.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          CUET (Education) – M.Ed. Programs
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-mortarboard-fill"></i> CUET (Education) – M.Ed. Programs
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                National Testing Agency (NTA)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                B.Ed., D.Ed., B.Sc.-B.Ed., or B.A.-B.Ed.<br>Minimum 50% marks
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                Approx. 2,000–3,000 seats
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                General: ₹1200<br>
+                OBC-NCL/EWS: ₹1000<br>
+                SC/ST/Third Gender: ₹900<br>
+                International: ₹6000
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                March and April
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Computer-Based Test (CBT) with MCQs
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Around 15,000–20,000 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+<!-- 2 -->
+  <div class="tab-pane fade show container my-5" id="SUAT" role="tabpanel">
+    
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+       <h3>Unlock Your Future with <span>SUAT</span></h3>
+        <p>
+          SUAT (Sharda University Admission Test) is a university-level entrance exam conducted annually by Sharda University for admission into a wide range of undergraduate and postgraduate courses.
+          It covers fields like Engineering, Management, Commerce, Law, and more, serving as a single gateway to diverse academic programs at the university.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          SUAT – Sharda University Admission Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> SUAT Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Sharda University
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Passed 10+2 with 60-70%<br>
+                Min. age: 17 years
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                130+ UG, PG, and other programs
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                Male: ₹1,500<br>
+                Female: ₹1,000
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                June (Once a year)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode & Candidates:</strong><br>
+                Computer-Based Test (MCQs)<br>
+                ~100,000–150,000 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+<!-- 3 -->
+  <div class="tab-pane fade show container my-5" id="GSAT" role="tabpanel">
+    
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Join the GITAM Community with <span>GSAT</span></h3>
+        <p>
+          The GITAM Science Admission Test (GSAT) is a national-level entrance exam conducted by Gandhi Institute of Technology and Management (GITAM) for admission to various undergraduate and postgraduate programs across its campuses in Vishakapatnam, Hyderabad, Bengaluru, and GIMSR.
+          The test is computer-based and offers a pathway to diverse academic fields, including Engineering, Architecture, Humanities, and more.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          GSAT – GITAM Science Admission Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> GSAT Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                GITAM (Deemed to be University)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                UG: 10+2 with PCM, 60%<br>
+                PG: Bachelor's with 50% aggregate
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                ~5,000–6,000 across programs
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹1,200
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                March & April (Multiple times)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode & Candidates:</strong><br>
+                Computer-Based Test<br>
+                ~55,000–60,000 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+<!-- 4 -->
+  <div class="tab-pane fade show container my-5" id="TISSNET" role="tabpanel">
+    
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Unlock Your Future with <span>TISSNET</span></h3>
+        <p>
+          The Tata Institute of Social Sciences National Entrance Test (TISSNET) is a prestigious university-level entrance exam conducted by TISS for admission to its postgraduate programs, including Master of Arts (MA) programs in fields such as Social Work, Human Resource Management, and Public Development Studies.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          TISSNET – Tata Institute of Social Sciences National Entrance Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> TISSNET Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Tata Institute of Social Sciences (TISS)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                UGC-recognized Bachelor's/Master's degree
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                ~900 seats (Masters Programs)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹1,030 (Unreserved)<br>
+                ₹260 (Reserved)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                February (Once a year)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode & Candidates:</strong><br>
+                Computer-Based Test (CBT)<br>
+                ~40,000 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+<!-- 5 -->
+  <div class="tab-pane fade show container my-5" id="TISSBAT" role="tabpanel">
+    
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Unlock Your Future with <span>TISS BAT</span></h3>
+        <p>
+          The TISS Bachelor's Admission Test (TISS BAT) is a national-level entrance exam conducted by the Tata Institute of Social Sciences (TISS) for admission to its undergraduate programs. It has replaced the traditional TISS BAT and is now conducted as a part of the Common University Entrance Test (CUET UG).
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          TISS BAT – TISS Bachelor’s Admission Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> TISS BAT Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Tata Institute of Social Sciences (TISS)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Passed 12th or equivalent exam
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                ~250–300 seats across campuses
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹1,025 (General)<br>
+                ₹275 (SC/ST/OBC-NC)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                May (Once a year)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode & Candidates:</strong><br>
+                CBT or Remote Proctoring<br>
+                ~40,000 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+<!-- 6 -->
+  <div class="tab-pane fade show container my-5" id="Ashoka" role="tabpanel"> 
+    
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Unlock Your Future with <span>Ashoka Aptitude Test</span></h3>
+        <p>
+          The Ashoka Aptitude Test (AAT) is a mandatory entrance exam for undergraduate programs at Ashoka University, designed to assess applicants' thinking skills and critical thinking abilities. It evaluates problem-solving, numerical and spatial reasoning, and understanding arguments.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          Ashoka Aptitude Test – Ashoka University Entrance Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> Ashoka Aptitude Test Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Ashoka University
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Final year of 12th with 50%+ marks<br>
+                Good English proficiency
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                ~1,200–1,500 undergraduate seats
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹1,000
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                December, January & May
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode & Candidates:</strong><br>
+                Online, computer-based<br>
+                ~15,000–20,000 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+<!-- 7 -->
+  <div class="tab-pane fade show container my-5" id="FLAME" role="tabpanel">
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Prepare for Success with <span>FLAME University Test</span></h3>
+        <p>
+          The FLAME Entrance Aptitude Test (FEAT) is an online aptitude test for UG programs at FLAME University, designed mainly for students who do not have SAT or ACT scores. This 120-minute exam is divided into four sections: Verbal Ability, Reasoning, Quantitative Ability, and General Knowledge. Applicants who submit SAT/ACT scores may only be required to complete an essay instead of the FEAT.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          FLAME University Test – FLAME University Entrance Exam
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> FLAME University Test Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                FLAME University
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                12th standard (or equivalent) passed
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                ~500–600 undergraduate seats
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹2,000
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                October and December
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode & Candidates:</strong><br>
+                Online, MCQ-based<br>
+                Varies annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+<!-- 8 -->
+  <div class="tab-pane fade show container my-5" id="NAT" role="tabpanel">
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Prepare for Success with <span>NAT – National Aptitude Test</span></h3>
+        <p>
+          The National Aptitude Test (NAT) is a national-level entrance exam administered by the Asia Pacific Institute of Information Technology (APIIT). This exam is conducted for admission to undergraduate (B Tech/BBA) and postgraduate (MBA) programs.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          NAT – National Aptitude Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> NAT Details Overview
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Asia Pacific Institute of Information Technology (APIIT)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                UG B.Tech/BBA: Minimum 45% in 12th/intermediate exam from a recognized board
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                50% of B.Tech seats (incl. 15% All India Category) through Haryana centralized counseling (JEE Main scores)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹700
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                June
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Location:</strong><br>
+                APIIT, Panipat
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+ </div>
+
+<!-- box inside end -->
+
+
+
+<!-- Info Box -->
+<style>
+  .content-box {
+    background-color: #ffffff;
+    border: 1px solid #e3e6e8;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-box h4 {
+    color: #10263D;
+    font-weight: 700;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: start;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-box i {
+    font-size: 1.4rem;
+    color: #10263D;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  .content-box a {
+    color: #10263D;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  @media (max-width: 576px) {
+    .content-box {
+      padding: 1.5rem;
+    }
+
+    .content-box p {
+      font-size: 0.95rem;
+    }
+
+    .content-box i {
+      font-size: 1.2rem;
+      margin-right: 0.75rem;
+    }
+  }
+</style>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-12">
+      <div class="content-box">
+        <h4 class="text-center mb-4">
+          <i class="bi bi-journal-check me-2"></i>
+          Why Choose Commerce & Liberal Studies?
+        </h4>
+
+        <p>
+          <i class="bi bi-graph-up-arrow"></i>
+          <span><strong>Emerging Pathways:</strong> Access UG & PG programs in Commerce, Economics, Psychology, and more via CUET, SUAT, GSAT, and TISSNET.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-globe-americas"></i>
+          <span><strong>Global Focus:</strong> Courses aligned with international standards in analytics, finance, and social sciences.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-award-fill"></i>
+          <span><strong>Top Institutions:</strong> Study at TISS, Ashoka University, FLAME University, and GITAM for cutting-edge education.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-journal-richtext"></i>
+          <span><strong>Expert Support:</strong> Get exam formats, eligibility, and college insights at
+            <a href="https://mustknowcolleges.com" target="_blank">MustKnowColleges.com</a>
+          </span>
+        </p>
+
+        <p>
+          <i class="bi bi-telephone-outbound"></i>
+          <span><strong>Explore Opportunities:</strong> Contact us via WhatsApp at
+            <a href="https://wa.me/919585222121" target="_blank">9585222121</a> for career guidance.
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Info Box End -->
+
+
+
+
+      
+
+
+
+
+
+
+<div id="footer"></div>
+ 
+  
+
+
+
+
+
+
+
+
+    <!-- Javascript -->
+
+    <script src="./assets/js/boostrap.js" ></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1534 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mustknowcollege</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+    <!-- Css -->
+
+    <link rel="stylesheet" href="./assets/css/boostrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <style>
+      :root{
+    --pry-clr:#10263D;
+    --sec-clr:#FF8C42;
+    --gray-clr:#464646;
+    --perfect-blue: #0f457f;
+}
+
+</style>
+    
+</head>
+<body>
+  
+
+    <!-- Navbar -->
+
+     
+    <div id="header"></div>
+  
+
+<!-- hero section -->
+ <style>
+    .hero {
+      background-color: var(--pry-clr);
+      display: flex;
+      background-image: url(./assets/new-img/enterexam-bg-banner.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3">
+       <h3>Discover <span>International Exams (for Abroad Studies)
+        </span> for Hands on Career Training</h3>
+        <p>Explore vocational programs and practical education options that <br> lead directly to employment in high-demand fields</p>
+    </div>
+  </section>
+<!-- hero section end -->
+
+
+
+      
+<!-- box content -->
+
+<!-- Style -->
+<style>
+  .exam-card-box {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+
+  .exam-card {
+    background-color: var(--perfect-blue);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 20px;
+    color: white;
+  }
+
+  .exam-title {
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .exam-item .exam-card-inner {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+
+  .exam-item .exam-card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .exam-item img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .exam-item p {
+    font-size: 0.85rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .exam-item p {
+      font-size: 0.8rem;
+    }
+
+    .exam-item img {
+      max-width: 60px;
+      margin-right: 1rem;
+      margin-bottom: 0;
+    }
+
+    .exam-item {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: inline-flex !important;
+      flex-direction: row !important;
+    }
+
+    .exam-item .exam-card-inner {
+      display: flex;
+      flex-direction: row !important;
+      align-items: center !important;
+      padding: 0.75rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    .exam-item .text-container {
+      display: flex;
+      flex-direction: column !important;
+      flex-grow: 1;
+    }
+
+    .text-container p {
+      text-align: start !important;
+    }
+
+    .exam-item h5 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .exam-item p {
+      font-size: 0.75rem;
+      opacity: 1;
+      max-height: none;
+      margin: 0;
+    }
+
+    .exam-card-inner:hover p {
+      max-height: none;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: none;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #educationTabs .nav-link:hover .exam-card-inner {
+      transform: none;
+      scale: 1;
+    }
+
+    #educationTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+    }
+  }
+
+  #educationTabs .nav-link:hover .exam-card-inner {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    scale: 1.02;
+  }
+
+  #educationTabs .nav-link.active .exam-card-inner {
+    background-color: #f0f7ff;
+    border: 2px solid #0d6efd;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+  }
+
+  #educationTabs .exam-card-inner {
+    transition: all 0.3s ease;
+  }
+</style>
+<!-- Style End -->
+
+<!-- Head Text -->
+<div class="exam-card-box m-5">
+  <div class="exam-card text-center">
+    <h4 class="exam-title">International Exams (for Abroad Studies)</h4>
+  </div>
+</div>
+<!-- Head Text End -->
+
+<!-- Tabbed Content -->
+<div class="container my-5" id="educationTabs" role="tablist">
+  <div class="row justify-content-center g-4" role="presentation">
+    <!-- Exam Cards -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="SAT-tab" data-bs-toggle="tab" data-bs-target="#SAT" type="button" role="tab" aria-controls="SAT" aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/International Exams (for Abroad Studies)/SAT-min.jpg" alt="SAT">
+          <div class="text-container">
+            <h5>SAT</h5>
+            <p>Scholastic Assessment Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="ACT-tab" data-bs-toggle="tab" data-bs-target="#ACT" type="button" role="tab" aria-controls="ACT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/International Exams (for Abroad Studies)/ACT-min.jpg" alt="ACT">
+          <div class="text-container">
+            <h5>ACT</h5>
+            <p>American College Testing</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="GRE-tab" data-bs-toggle="tab" data-bs-target="#GRE" type="button" role="tab" aria-controls="GRE" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/International Exams (for Abroad Studies)/GRE-min.jpg" alt="GRE">
+          <div class="text-container">
+            <h5>GRE</h5>
+            <p>Graduate Record Examination</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="GMAT-tab" data-bs-toggle="tab" data-bs-target="#GMAT" type="button" role="tab" aria-controls="GMAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/International Exams (for Abroad Studies)/GMAT-min.jpg" alt="GMAT">
+          <div class="text-container">
+            <h5>GMAT</h5>
+            <p>Graduate Management Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="IELTS-tab" data-bs-toggle="tab" data-bs-target="#IELTS" type="button" role="tab" aria-controls="IELTS" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/International Exams (for Abroad Studies)/IELTS-min.jpg" alt="IELTS">
+          <div class="text-container">
+            <h5>IELTS</h5>
+            <p>International English Language Testing System</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="TOEFL-tab" data-bs-toggle="tab" data-bs-target="#TOEFL" type="button" role="tab" aria-controls="TOEFL" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/International Exams (for Abroad Studies)/TOEFL-min.jpg" alt="TOEFL">
+          <div class="text-container">
+            <h5>TOEFL</h5>
+            <p>Test of English as a Foreign Language</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="PTE-tab" data-bs-toggle="tab" data-bs-target="#PTE" type="button" role="tab" aria-controls="PTE" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/International Exams (for Abroad Studies)/PTE-min.jpg" alt="PTE">
+          <div class="text-container">
+            <h5>PTE</h5>
+            <p>Pearson Test of English</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Tabbed Content End -->
+
+<!-- box content end -->
+
+
+
+<!-- box inside -->
+
+<div class="tab-content" id="internationalExamsTabs">
+
+
+<!-- 1 -->
+  <div class="tab-pane fade show active container my-5" id="SAT" role="tabpanel">
+    
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Appear for the <span>SAT – Undergraduate Entrance Exam / Scholastic Aptitude Test (IIIT-H)</span></h3>
+        <p>
+          The Undergraduate Entrance Examination (UGEE) is the entrance exam for IIIT Hyderabad (IIIT-H) for B.Tech programs. Applicants in this mode take a 3-hour computer-based UGEE at IIIT Hyderabad, consisting of two sections: SUPR – Subject Proficiency Test (60 mins) and REAP – Research Aptitude Test (120 mins). Candidates are shortlisted based on SUPR scores, prioritizing REAP scores, with 25% negative marking in each section.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          SAT – Undergraduate Entrance Exam / Scholastic Aptitude Test (IIIT-H)
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> UGEE – Entry for B.Tech via IIIT-H Scholastic Aptitude Test
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                IIIT Hyderabad
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Class 12 with PCM, 60% aggregate
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                100–120 seats available
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹3,000 (Males), ₹1,500 (Females)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                April (once a year)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                CBT – SUPR (60 min) + REAP (120 min), 25% negative marking
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                30,000–60,000 students
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm img-zoom-container">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+<!-- 2 -->  
+  <div class="tab-pane fade show container my-5" id="ACT" role="tabpanel">
+
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Appear for the <span>ACT – American College Testing</span></h3>
+        <p>
+          The ACT (American College Testing) is a standardized test used for college admissions in the United States and Canada. It assesses a student's readiness for college-level coursework by evaluating their knowledge and skills in English, mathematics, reading, and science.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          ACT – American College Testing
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> Standardized Test for College Admissions
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                ACT Inc.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Open to all; common among high school students
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                Available in India; fewer applicants than SAT
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹4,835.25 (without Writing) / ₹6,754 (with Writing)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                Feb, Apr, Jun, Jul, Sep, Oct, Dec
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                English, Math, Reading, Science + Optional Writing
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Over 1.4 million annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm img-zoom-container">
+        <img src="./assets/img/right-side-image.jpg" alt="Right Side Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+<!-- 3 --> 
+  <div class="tab-pane fade show container my-5" id="GRE" role="tabpanel">
+
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Appear for the <span>GRE – Graduate Record Examination</span></h3>
+        <p>
+          The GRE (Graduate Record Examination) is a standardized test used for graduate school admissions, primarily in the US and Canada. It assesses an applicant's aptitude in analytical writing, verbal reasoning, and quantitative reasoning, helping universities evaluate candidates' readiness for graduate studies.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          GRE – Graduate Record Examination
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> Standardized Test for Graduate Admissions
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Educational Testing Service (ETS)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Open to anyone; no specific qualifications or age limits required
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                Accepted by over 1,300 business and graduate programs worldwide
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                GRE General – ₹22,550<br>
+                GRE Subject – ₹14,500
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                April, September, October
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Computer-based test covering Analytical Writing, Verbal, and Quantitative Reasoning
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                India leads with 1,13,304 test-takers, followed by the US and China
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm img-zoom-container">
+        <img src="./assets/img/right-side-image.jpg" alt="GRE Exam Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+<!-- 4 -->  
+  <div class="tab-pane fade show container my-5" id="GMAT" role="tabpanel">
+
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Appear for the <span>GMAT – Graduate Management Admission Test</span></h3>
+        <p>
+          The GMAT (Graduate Management Admission Test) is a standardized exam used by business schools to assess the skills needed for success in graduate management programs, particularly MBA programs. It evaluates a candidate's quantitative reasoning, verbal reasoning, and data analysis abilities.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          GMAT – Graduate Management Admission Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> Entrance Exam for Global MBA Programs
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Graduate Management Admission Council (GMAC)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                No specific criteria; open to all interested candidates
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                Accepted by 7,700+ programs at 2,400+ business schools worldwide
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹22,950 (Test center)<br>
+                ₹25,000 (Online proctored)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                Available year-round
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Computer-based (Test center and Online proctored)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                78,429 unique candidates (117,510 total registrations)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm img-zoom-container">
+        <img src="./assets/img/right-side-image.jpg" alt="GMAT Exam Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+<!-- 5 -->
+  <div class="tab-pane fade show container my-5" id="IELTS" role="tabpanel">
+
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Appear for the <span>IELTS – International English Language Testing System</span></h3>
+        <p>
+          The IELTS (International English Language Testing System) is a standardized test of English language proficiency used worldwide for academic and immigration purposes. IELTS is used by universities, employers, and immigration authorities to assess English language skills. IELTS is widely accepted by educational institutions, employers, and immigration authorities in English-speaking countries.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          IELTS – International English Language Testing System
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> English Language Proficiency Test for Study, Work, and Migration
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                British Council, IDP IELTS, and Cambridge University Press & Assessment
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Open to anyone aged 16 and above
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                Accepted by all UK and Australian universities and 3,400+ U.S. institutions
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹18,000 (Academic & General Training)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                Conducted year-round, multiple times each month
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                IELTS on Paper and IELTS on Computer
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Taken by 4 million+ people annually worldwide
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm img-zoom-container">
+        <img src="./assets/img/right-side-image.jpg" alt="IELTS Exam Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+<!-- 6 -->
+  <div class="tab-pane fade show container my-5" id="TOEFL" role="tabpanel">
+
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Appear for the <span>TOEFL – Test of English as a Foreign Language</span></h3>
+        <p>
+          The TOEFL (Test of English as a Foreign Language) is a standardized academic English test primarily taken by students applying to universities in the United States. The TOEFL is also accepted as proof of English ability by some universities outside the United States.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          TOEFL – Test of English as a Foreign Language
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> Academic English Proficiency Test for Study Abroad
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Educational Testing Service (ETS)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Open to anyone wishing to demonstrate English proficiency
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                Accepted by 13,000+ institutions across 160+ countries
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹16,900 (TOEFL iBT)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                Available year-round with monthly test dates
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                TOEFL iBT (Internet-Based Test)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Approximately 2.3 lakh candidates per year
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm img-zoom-container">
+        <img src="./assets/img/right-side-image.jpg" alt="TOEFL Exam Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+<!-- 7 -->  
+  <div class="tab-pane fade show container my-5" id="PTE" role="tabpanel">
+
+    <style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease-in-out;
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease-in-out;
+  }
+</style>
+
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Appear for the <span>PTE – Pearson Test of English</span></h3>
+        <p>
+          The PTE Academic is a computer-based English language test that assesses reading, writing, speaking, and listening skills. PTE is accepted by thousands of universities, institutions, and governments worldwide, including in the UK, Australia, Canada, and New Zealand.
+        </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          PTE – Pearson Test of English
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-award-fill"></i> Computer-based English Language Proficiency Test
+        </h5>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Pearson PLC Group
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Minimum age 16 (parental consent needed for 16–18). Open to all
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                62 centers across India + global test network
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹17,000 (including GST)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>
+                Available year-round including April, May, June
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Computer-based test: Speaking, Writing, Reading, Listening
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                ~1.231 million candidates annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="shadow-sm img-zoom-container">
+        <img src="./assets/img/right-side-image.jpg" alt="PTE Exam Image" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+
+
+</div>
+
+
+<!-- box inside end -->
+
+
+
+
+<!-- info section -->
+
+<!-- Style -->
+<style>
+  .content-box {
+    background-color: #ffffff;
+    border: 1px solid #e3e6e8;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-box h4 {
+    color: #10263D;
+    font-weight: 700;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: start;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-box i {
+    font-size: 1.4rem;
+    color: #10263D;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  .content-box a {
+    color: #10263D;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  @media (max-width: 576px) {
+    .content-box {
+      padding: 1.5rem;
+    }
+
+    .content-box p {
+      font-size: 0.95rem;
+    }
+
+    .content-box i {
+      font-size: 1.2rem;
+      margin-right: 0.75rem;
+    }
+  }
+</style>
+<!-- Style End -->
+
+<!-- Info  -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-12">
+      <div class="content-box">
+        <h4 class="text-center mb-4">
+          <i class="bi bi-journal-check me-2"></i>
+          Why Choose International Exams for Abroad Studies?
+        </h4>
+
+        <p>
+          <i class="bi bi-graph-up-arrow"></i>
+          <span><strong>Global Opportunities:</strong> Join millions of students worldwide taking SAT, ACT, GRE, GMAT, IELTS, TOEFL, and PTE for admission to top universities abroad.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-globe-americas"></i>
+          <span><strong>Diverse Academic Pathways:</strong> Pursue undergraduate, graduate, or professional degrees in fields like engineering, business, humanities, and more at prestigious global institutions.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-award-fill"></i>
+          <span><strong>Entry Routes:</strong> Start with SAT/ACT for undergraduate programs, GRE/GMAT for graduate studies, or IELTS/TOEFL/PTE for English proficiency certification.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-journal-richtext"></i>
+          <span><strong>Expert Guidance:</strong> Access exam strategies, preparation tips, and university application insights at
+            <a href="https://mustknowcolleges.com" target="_blank">MustKnowColleges.com</a>.
+          </span>
+        </p>
+
+        <p>
+          <i class="bi bi-telephone-outbound"></i>
+          <span><strong>Start Your Journey:</strong> Contact us via WhatsApp at
+            <a href="https://wa.me/919585222121" target="_blank">9585222121</a> for study abroad guidance.
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Info Section End -->
+
+
+
+
+
+
+
+
+<div id="footer"></div>
+ 
+  
+
+
+
+
+
+
+
+
+    <!-- Javascript -->
+
+    <script src="./assets/js/boostrap.js" ></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
