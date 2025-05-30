@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mustknowcollege</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Css -->
+
+  <link rel="stylesheet" href="./assets/css/boostrap.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+
+  <style>
+    :root {
+      --pry-clr: #10263D;
+      --sec-clr: #001b36;
+      --gray-clr: #464646;
+      --perfect-blue: #0f457f;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+
+
+  <div id="header"></div>
+
+
+
+  <!-- hero -->
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      background: url('./assets/new-img/enterexam-bg-banner.jpg') center/cover no-repeat ;
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3 text-capitalize">
+      <h3>Discover <span> Film, Media & Performing Arts
+        </span> for Hands on Career Training</h3>
+      <p>Explore vocational programs and practical education options that <br> lead directly to employment in
+        high-demand fields</p>
+    </div>
+  </section>
+
+  <!-- hero end-->
+
+
+
+
+  <!-- FilmMediaTabs box -->
+
+  <style>
+    .exam-card-box {
+      display: flex;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+
+    .exam-card {
+      background-color: var(--pry-clr, #0d6efd);
+      /* Fallback to blue if --pry-clr is undefined */
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 1rem;
+      padding: 20px;
+      color: white;
+    }
+
+    .exam-title {
+      font-weight: 700;
+      color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .exam-item .exam-card-inner {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .exam-item img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .exam-item p {
+      font-size: 0.85rem;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .exam-item p {
+        font-size: 0.8rem;
+      }
+
+      .exam-item img {
+        max-width: 100px;
+      }
+    }
+
+    .exam-card-inner p {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease, max-height 1s ease;
+    }
+
+    .exam-card-inner:hover p {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    /* Hover effect */
+    #FilmMediaTabs .nav-link:hover .exam-card-inner {
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      scale: 1.02;
+    }
+
+    /* Active (selected) effect */
+    #FilmMediaTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+    }
+
+    /* Smooth transition */
+    #FilmMediaTabs .exam-card-inner {
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .exam-card-box {
+        margin: 1rem;
+      }
+
+      .exam-card {
+        padding: 15px;
+      }
+
+      .exam-title {
+        font-size: 1.2rem;
+      }
+
+      .exam-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: inline-flex !important;
+        flex-direction: row !important;
+      }
+
+      .exam-item .exam-card-inner {
+        display: flex;
+        flex-direction: row !important;
+        /* Changed to row for image-text side by side */
+        align-items: center !important;
+        /* Center vertically */
+        padding: 0.75rem;
+        text-align: left;
+        width: 100%;
+      }
+
+      .exam-item img {
+        max-width: 60px;
+        margin-right: 1rem;
+        /* Space between image and text */
+        margin-bottom: 0;
+      }
+
+      .exam-item .text-container {
+        display: flex;
+        flex-direction: column !important;
+        flex-grow: 1;
+      }
+
+      .text-container p {
+        text-align: start !important;
+      }
+
+      .exam-item h5 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      .exam-item p {
+        font-size: 0.75rem;
+        opacity: 1;
+        max-height: none;
+        margin: 0;
+      }
+
+      .exam-card-inner:hover p {
+        max-height: none;
+      }
+
+      .exam-item .exam-card-inner:hover {
+        transform: none;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      #FilmMediaTabs .nav-link:hover .exam-card-inner {
+        transform: none;
+        scale: 1;
+      }
+
+      #FilmMediaTabs .nav-link.active .exam-card-inner {
+        background-color: #f0f7ff !important;
+        border: 2px solid #0d6efd !important;
+      }
+    }
+  </style>
+
+  <!-- Heading -->
+  <div class="exam-card-box m-5">
+    <div class="exam-card text-center" style="background-color: var(--perfect-blue);">
+      <h4 class="exam-title">Film, Media & Performing Arts</h4>
+    </div>
+  </div>
+
+
+  <!-- Exam Cards Grid -->
+  <div class="container my-5" id="FilmMediaTabs" role="tablist">
+
+    <div class="row justify-content-center g-4" role="presentation">
+
+      
+
+      <!-- FTII JET -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="FTII-tab" data-bs-toggle="tab" data-bs-target="#FTII" type="button" role="tab" aria-controls="FTII"
+          aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Film, Media & Performing Arts/FTII JET-min.jpg" alt="FTII JET">
+            <div class="text-container">
+              <h5>FTII JET</h5>
+              <p>FTII Entrance Exam</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- SRFTI -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="SRFTI-tab" data-bs-toggle="tab" data-bs-target="#SRFTI" type="button" role="tab" aria-controls="SRFTI"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Film, Media & Performing Arts/SRFTI-min.jpg" alt="SRFTI">
+            <div class="text-container">
+              <h5>SRFTI</h5>
+              <p>SRFTI Entrance Exam</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- WWI Entrance -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="WWI-tab" data-bs-toggle="tab" data-bs-target="#WWI" type="button" role="tab" aria-controls="WWI"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Film, Media & Performing Arts/SRFTI-min.jpg" alt="WWI Entrance">
+            <div class="text-container">
+              <h5>WWI Entrance</h5>
+              <p>Whistling Woods Entrance</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <!-- NSD Screening Test -->
+      <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+        <button id="NSD-tab" data-bs-toggle="tab" data-bs-target="#NSD" type="button" role="tab" aria-controls="NSD"
+          aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+          <div class="exam-card-inner d-flex flex-column align-items-center">
+            <img src="./assets/Film, Media & Performing Arts/FTII JET-min.jpg" alt="NSD Screening Test">
+            <div class="text-container">
+              <h5>NSD Screening</h5>
+              <p>National School of Drama</p>
+            </div>
+          </div>
+        </button>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!-- FilmMediaTabs box end-->
+
+
+  
+  <div class="tab-content" id="FilmMediaTabs">
+
+    <!-- 1 -->
+     <div class="tab-pane fade show active container my-5" id="FTII" role="tabpanel">
+      <!-- FTII JET Section -->
+<section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Step Into the World of Cinema with <span class="">FTII JET</span></h3>
+      <p class="mt-2 mb-0">
+        The FTII JET is a national-level entrance exam conducted by FTII Pune or SRFTI Kolkata. It offers admission to PG diploma & PG courses in film and television disciplines, launching careers in the cinematic arts.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          FTII JET – Film and Television Institute of India Entrance Exam
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4">
+          <i class="bi bi-film"></i> FTII JET – Key Highlights
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                FTII Pune & SRFTI Kolkata
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                21+ years, Bachelor's degree<br>
+                Specific criteria per course
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                120 seats (Combined FTII + SRFTI)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                General: ₹2,000<br>SC/ST/PWD/Female: ₹600
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                April (Annually)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Around 6,125 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="FTII JET" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+     </div>
+
+     <!-- 2 -->
+    <div class="tab-pane fade container" id="SRFTI" role="tabpanel">
+
+      <section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Unlock Your Creative Future with <span class="">SRFTI JET</span></h3>
+      <p class="mt-2 mb-0">
+        The SRFTI - Satyajit Ray Film and Television Institute Entrance Exam is a Joint Entrance Test (JET) conducted by FTII, Pune, and SRFTI, Kolkata for admissions to postgraduate and post-graduate diploma courses in film and television.<br>
+        It is a prestigious exam that opens doors to a career in the dynamic world of cinema.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue);"; border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          SRFTI – Satyajit Ray Film and Television Institute Entrance Exam
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4 ">
+          <i class="bi bi-mortarboard-fill"></i> SRFTI – Satyajit Ray Film and Television Institute Entrance Exam
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                FTII Pune & SRFTI Kolkata
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Bachelor's degree<br>
+                (Special requirements for some programs)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                12 (PGP Cinema) + 60 (Certificate courses)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹2,000/₹3,000/₹4,000 (General)<br>₹600/₹900/₹1,200 (Reserved)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                May (Once a year)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Written Exam
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                Over 6,000 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="SRFTI Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+
+    </div>
+    <!-- 3 -->
+    <div class="tab-pane fade container" id="WWI" role="tabpanel">
+      <section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Explore Your Creative Potential with <span class="">WWI Entrance</span></h3>
+      <p class="mt-2 mb-0">
+        The Whistling Woods International (WWI) Entrance Exam is a competitive test for aspiring students in Film, Communication, and Creative Arts.<br>
+        The exam consists of two parts: a General Aptitude Test (GAT) focusing on logical reasoning and analytical abilities, and a Creative Ability Test (CAT) assessing creativity and design aptitude.<br>
+        It is conducted program-wise with specific dates for different courses like B.Des in Fashion Design, Animation, Game Design, and Visual Communication Design.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue);"; border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          WWI Entrance – Whistling Woods International Entrance Exam
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4 ">
+          <i class="bi bi-mortarboard-fill"></i> WWI Entrance – Whistling Woods International Entrance Exam
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                Whistling Woods International
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Class 12 pass<br>
+                Proficiency in English
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                100 (Fashion Design)<br>
+                150 (Animation)<br>
+                50 (Game Design)<br>
+                50 (Visual Communication)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                ₹3,500
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                April (Once a year)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>
+                Computer-Based Test (CBT)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Appearing Candidates:</strong><br>
+                2,000–3,000 annually
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/right-side-image.jpg" alt="WWI Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+    </div>
+    <!-- 4 -->
+    <div class="tab-pane fade container" id="NSD" role="tabpanel">
+      <section class="container my-4">
+  <div class="hero row text-center p-4 shadow-sm rounded-4" style="background-color: var(--perfect-blue);">
+    <div class="col">
+      <h3>Step into the World of Drama with <span class="">NSD Screening Test</span></h3>
+      <p class="mt-2 mb-0">
+        The NSD entrance exam is a two-stage process for admission to the Diploma in Dramatic Arts course at the prestigious National School of Drama in Delhi.<br>
+        The process includes a preliminary examination followed by a final workshop, designed to assess the skills and potential of aspiring students in the field of dramatic arts.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <div class="card border-0 shadow-sm mb-3" style="background-color: var(--perfect-blue); border-radius: 12px;">
+        <h4 class="text-center text-light fw-bold p-3 m-0">
+          National School of Drama (NSD) Screening Test
+        </h4>
+      </div>
+
+      <div class="card p-4 border-0 shadow-sm" style="border-radius: 12px; background-color: #f9f9f9;">
+        <h5 class="mb-4 ">
+          <i class="bi bi-mortarboard-fill"></i> National School of Drama (NSD) Screening Test
+        </h5>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>
+                National School of Drama (NSD), Delhi
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>
+                Graduation Degree<br>
+                Theatre experience (participation in productions)<br>
+                Working knowledge of Hindi and English<br>
+                Recommendation from a theatre expert
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>
+                Approximately 100 seats for Diploma in Dramatic Arts
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>
+                Entrance Exam: ₹150<br>
+                Tuition Fee: ₹150/month<br>
+                Caution Money & Library Fee: ₹5,000 (Refundable)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>
+                July (Once a year)
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+              <p class="mb-0">
+                <i class="bi bi-caret-right-fill"></i> <strong>Emerging Students:</strong><br>
+                Around 5,000 candidates register annually for 100 seats
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <div class="img-zoom-container shadow-sm">
+        <img src="./assets/img/agriculture.jpg" alt="NSD Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!-- info  -->
+
+  <style>
+    .content-box {
+      background-color: #ffffff;
+      border: 1px solid #e3e6e8;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .content-box h4 {
+      color: #10263D;
+      font-weight: 700;
+    }
+
+    .content-box p {
+      font-size: 1rem;
+      color: #2c3e50;
+      display: flex;
+      align-items: start;
+      margin-bottom: 1.25rem;
+    }
+
+    .content-box i {
+      font-size: 1.4rem;
+      color: #10263D;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .content-box a {
+      color: #10263D;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    @media (max-width: 576px) {
+      .content-box {
+        padding: 1.5rem;
+      }
+
+      .content-box p {
+        font-size: 0.95rem;
+      }
+
+      .content-box i {
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+      }
+    }
+  </style>
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-12">
+        <div class="content-box">
+          <h4 class="text-center mb-4">
+            <i class="bi bi-camera-reels-fill me-2"></i>Film, Media & Performing Arts: Create Stories, Command the
+            Spotlight
+          </h4>
+
+          <p>
+            <i class="bi bi-graph-up-arrow me-3"></i>
+            <span><strong>Industry Boom:</strong> India’s media & entertainment sector is projected to reach ₹2.8 lakh
+              crore by 2026, fueling demand for creative talent.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-award-fill me-3"></i>
+            <span><strong>Top Institutes:</strong> Crack exams like FTII JET, SRFTI Entrance, WWI Exam, and NSD
+              Screening Test to join premier film and performing arts schools.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-stars me-3"></i>
+            <span><strong>Career Avenues:</strong> Shine across OTT platforms, global film festivals, theatre, digital
+              media, advertising, and beyond.</span>>
+          </p>
+
+          <p>
+            <i class="bi bi-journal-richtext me-3"></i>
+            <span><strong>Expert Guidance:</strong> Get audition tips, institute portfolios, prep strategies, and
+              scholarships info at <a href="https://mustknowcolleges.com"
+                target="_blank"><strong>MustKnowColleges.com</strong></a>.</span>
+          </p>
+
+          <p>
+            <i class="bi bi-telephone-forward-fill me-3"></i>
+            <span><strong>Lights, Camera, Career:</strong> WhatsApp us at <a href="https://wa.me/919585222121"
+                target="_blank">9585222121</a> and step into the spotlight!</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- info end -->
+
+
+
+  <div id="footer"></div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Javascript -->
+
+  <script src="./assets/js/boostrap.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

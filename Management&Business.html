@@ -1,0 +1,2577 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mustknowcollege</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+    <!-- Css -->
+
+    <link rel="stylesheet" href="./assets/css/boostrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <style>
+         :root {
+      --pry-clr: #10263D;
+      --sec-clr: #001b36;
+      --gray-clr: #464646;
+      --perfect-blue: #0f457f;
+    }
+    .card{
+            background-color: var(--pry-clr);
+            color: #ffff;
+        }
+  </style>
+
+
+</head>
+<body>
+  
+
+    <!-- Navbar -->
+
+     
+    <div id="header"></div>
+  
+
+    <!-- hero -->
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background-color: var(--pry-clr);
+      display: flex;
+      background: url('./assets/new-img/enterexam-bg-banner.jpg') center/cover no-repeat;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1rem !important;
+      /* min-height: 60vh; */
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      border-radius: 1rem;
+      color: #ffffff;
+    }
+
+    .hero h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e3f2fd;
+      line-height: 1.6;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content {
+        padding: 1.5rem;
+      }
+
+      .hero h3 {
+        font-size: 1.4rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="hero-content mx-3 text-capitalize">
+        <h3>Discover <span>Management & Business
+        </span> for Hands on Career Training</h3>
+        <p>Explore vocational programs and practical education options that <br> lead directly to employment in high-demand fields</p>
+    </div>
+  </section>
+
+  <!-- hero end-->
+
+
+    <!-- management box -->
+
+  <style>
+  .exam-card-box {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+
+  .exam-card {
+    background-color: var(--pry-clr, #0d6efd);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 20px;
+    color: white;
+  }
+
+  .exam-title {
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .exam-item .exam-card-inner {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+
+  .exam-item .exam-card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .exam-item img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .exam-item p {
+    font-size: 0.85rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .exam-item p {
+      font-size: 0.8rem;
+    }
+
+    .exam-item img {
+      max-width: 100px;
+    }
+  }
+
+  .exam-card-inner p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 1s ease;
+  }
+
+  .exam-card-inner:hover p {
+    opacity: 1;
+    max-height: 100px;
+  }
+
+  #scholarshipTabs .nav-link:hover .exam-card-inner {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    scale: 1.02;
+  }
+
+  #scholarshipTabs .nav-link.active .exam-card-inner {
+    background-color: #f0f7ff;
+    border: 2px solid #0d6efd;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+  }
+
+  #scholarshipTabs .exam-card-inner {
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    .exam-card-box {
+      margin: 1rem;
+    }
+
+    .exam-card {
+      padding: 15px;
+    }
+
+    .exam-title {
+      font-size: 1.2rem;
+    }
+
+    .exam-item {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: inline-flex !important;
+      flex-direction: row !important;
+    }
+
+    .exam-item .exam-card-inner {
+      display: flex;
+      flex-direction: row !important;
+      align-items: center !important;
+      padding: 0.75rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    .exam-item img {
+      max-width: 60px;
+      margin-right: 1rem;
+      margin-bottom: 0;
+    }
+
+    .exam-item .text-container {
+      display: flex;
+      flex-direction: column !important;
+      flex-grow: 1;
+    }
+
+    .text-container p {
+      text-align: start !important;
+    }
+
+    .exam-item h5 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .exam-item p {
+      font-size: 0.75rem;
+      opacity: 1;
+      max-height: none;
+      margin: 0;
+    }
+
+    .exam-card-inner:hover p {
+      max-height: none;
+    }
+
+    .exam-item .exam-card-inner:hover {
+      transform: none;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #scholarshipTabs .nav-link:hover .exam-card-inner {
+      transform: none;
+      scale: 1;
+    }
+
+    #scholarshipTabs .nav-link.active .exam-card-inner {
+      background-color: #f0f7ff;
+      border: 2px solid #0d6efd;
+    }
+  }
+</style>
+
+<!-- Head Text -->
+<div class="exam-card-box m-5">
+  <div class="exam-card text-center" style="background-color: var(--perfect-blue) !important;">
+    <h4 class="exam-title">Management & Business Exams</h4>
+  </div>
+</div>
+<!-- Head Text End -->
+
+<div class="container my-5" id="scholarshipTabs" role="tablist">
+  <div class="row justify-content-center g-4" role="presentation">
+    <!-- CAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="CAT-tab" data-bs-toggle="tab" data-bs-target="#CAT" type="button" role="tab" aria-controls="CAT" aria-selected="true" class="nav-link active p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/CommonAdmissionTest-min.jpg" alt="CAT">
+          <div class="text-container">
+            <h5>CAT</h5>
+            <p>Common Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- XAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="XAT-tab" data-bs-toggle="tab" data-bs-target="#XAT" type="button" role="tab" aria-controls="XAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/XAT -min.jpg" alt="XAT">
+          <div class="text-container">
+            <h5>XAT</h5>
+            <p>Xavier Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- CMAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="CMAT-tab" data-bs-toggle="tab" data-bs-target="#CMAT" type="button" role="tab" aria-controls="CMAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/CMAT -min.jpg" alt="CMAT">
+          <div class="text-container">
+            <h5>CMAT</h5>
+            <p>Common Management Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- MAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="MAT-tab" data-bs-toggle="tab" data-bs-target="#MAT" type="button" role="tab" aria-controls="MAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/MAT.jpg" alt="MAT">
+          <div class="text-container">
+            <h5>MAT</h5>
+            <p>Management Aptitude Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- NMAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="NMAT-tab" data-bs-toggle="tab" data-bs-target="#NMAT" type="button" role="tab" aria-controls="NMAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/NMAT-min.jpg" alt="NMAT">
+          <div class="text-container">
+            <h5>NMAT</h5>
+            <p>National Management Aptitude Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- SNAP -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="SNAP-tab" data-bs-toggle="tab" data-bs-target="#SNAP" type="button" role="tab" aria-controls="SNAP" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/SymbiosisNationalAptitudeTest-min.jpg" alt="SNAP">
+          <div class="text-container">
+            <h5>SNAP</h5>
+            <p>Symbiosis National Aptitude Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- IBSAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="IBSAT-tab" data-bs-toggle="tab" data-bs-target="#IBSAT" type="button" role="tab" aria-controls="IBSAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/IBSAT-ICFAI-min.jpg" alt="IBSAT">
+          <div class="text-container">
+            <h5>IBSAT</h5>
+            <p>ICFAI Business School Aptitude Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- IIFT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="IIFT-tab" data-bs-toggle="tab" data-bs-target="#IIFT" type="button" role="tab" aria-controls="IIFT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/IIFTMBA-min.jpg" alt="IIFT">
+          <div class="text-container">
+            <h5>IIFT</h5>
+            <p>IIFT MBA Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- ATMA -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="ATMA-tab" data-bs-toggle="tab" data-bs-target="#ATMA" type="button" role="tab" aria-controls="ATMA" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/ATMA-AIMS-min.jpg" alt="ATMA">
+          <div class="text-container">
+            <h5>ATMA</h5>
+            <p>AIMS Test for Management Admissions</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- ICET -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="ICET-tab" data-bs-toggle="tab" data-bs-target="#ICET" type="button" role="tab" aria-controls="ICET" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/ICET-min.jpg" alt="ICET">
+          <div class="text-container">
+            <h5>ICET</h5>
+            <p>Integrated Common Entrance Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- K-MAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="K-MAT-tab" data-bs-toggle="tab" data-bs-target="#K-MAT" type="button" role="tab" aria-controls="K-MAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/KMAT-min.jpg" alt="K-MAT">
+          <div class="text-container">
+            <h5>K-MAT</h5>
+            <p>Karnataka Management Aptitude Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- JIPMAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="JIPMAT-tab" data-bs-toggle="tab" data-bs-target="#JIPMAT" type="button" role="tab" aria-controls="JIPMAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/JIPMAT-min.jpg" alt="JIPMAT">
+          <div class="text-container">
+            <h5>JIPMAT</h5>
+            <p>Joint Integrated Programme in Management</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- MICAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="MICAT-tab" data-bs-toggle="tab" data-bs-target="#MICAT" type="button" role="tab" aria-controls="MICAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/MICAT-min.jpg" alt="MICAT">
+          <div class="text-container">
+            <h5>MICAT</h5>
+            <p>MICA Admission Test</p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- CEMAT -->
+    <div class="col-6 col-sm-6 col-lg-2 exam-item d-flex flex-column align-items-center">
+      <button id="CEMAT-tab" data-bs-toggle="tab" data-bs-target="#CEMAT" type="button" role="tab" aria-controls="CEMAT" aria-selected="false" class="nav-link p-0 border-0 bg-transparent w-100">
+        <div class="exam-card-inner d-flex flex-column align-items-center">
+          <img src="./assets/Management & Business/XAT -min.jpg" alt="CEMAT">
+          <div class="text-container">
+            <h5>CEMAT</h5>
+            <p>Commonwealth Executive MBA & MPA</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <!-- Tab Panes Placeholder -->
+  <div class="tab-content">
+    <!-- 1 -->
+    <!-- CAT Tab Panel -->
+<div class="tab-pane fade show active container my-4" id="CAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Crack Top B-Schools with <span>CAT</span></h3>
+        <p class="mt-2 mb-0">
+          The Common Admission Test (CAT), conducted by IIMs, is a gateway to MBA programs at top B-schools in India.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+        <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            CAT – Common Admission Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-bar-chart-line"></i> MBA Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>IIMs</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>50%+ in Bachelor’s<br>45% for SC/ST/PwD</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~5,000 across IIMs & B-Schools</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>Gen/EWS/OBC: ₹2,500<br>SC/ST/PwD: ₹1,250</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>November</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>CBT</p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~2.3L annually</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/CommonAdmissionTest-min.jpg" alt="CAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 2 -->
+   <!-- XAT Tab Panel -->
+<div class="tab-pane fade container my-4" id="XAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Step into XLRI with <span>XAT</span></h3>
+        <p class="mt-2 mb-0">
+          The Xavier Aptitude Test (XAT), conducted by XLRI, is a gateway to MBA/PGDM programs at XLRI and other top institutes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            XAT – Xavier Aptitude Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-briefcase"></i> MBA/PGDM Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>XLRI</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Bachelor’s degree</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>PGDM: 600<br>Exec. PGDM: 120</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹2,100 (+₹200/program)</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-0 p-3 rounded">
+                <p class="mb-0 p-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>January</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-1 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>CBT</p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~1L annually</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/XAT -min.jpg" alt="XAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 3 -->
+   <!-- CMAT Tab Panel -->
+<div class="tab-pane fade container my-4" id="CMAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Step into Management with <span>CMAT</span></h3>
+        <p class="mt-2 mb-0">
+          The Common Management Admission Test (CMAT), conducted by NTA, is a gateway to MBA/PGDM programs at 1,300+ AICTE-approved institutes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            CMAT – Common Management Admission Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-clipboard-data"></i> MBA/PGDM Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>NTA</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>50% in Bachelor’s (Gen)<br>45% (SC/ST/PwD)</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>1,300+ AICTE institutes</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹2,000 (M Gen/EWS/OBC)<br>₹1,000 (F/SC/ST/PwD)</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>May</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>CBT</p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~63,000 annually</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/CMAT -min.jpg" alt="CMAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 4 -->
+ <!-- MAT Tab Panel -->
+<div class="tab-pane fade container my-4" id="MAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Step into B-Schools with <span>MAT</span></h3>
+        <p class="mt-2 mb-0">
+          The Management Aptitude Test (MAT), conducted by AIMA, is a gateway to MBA programs at 600+ B-schools in India.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            MAT – Management Aptitude Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-clipboard-data"></i> MBA Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>AIMA</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Bachelor’s degree</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>600+ B-schools</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹2,100 (PBT/CBT)<br>₹3,600 (Both)</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>Feb, May, Aug, Dec</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>PBT/CBT</p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~20,000+/session</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/MAT.jpg" alt="MAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 5 -->
+   <!-- NMAT Tab Panel -->
+<div class="tab-pane fade container my-4" id="NMAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Boost Your Career with <span>NMAT</span></h3>
+        <p class="mt-2 mb-0">
+          The NMAT, conducted by GMAC, is a gateway to MBA programs at NMIMS and other top B-schools in India.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            NMAT – National Management Aptitude Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-clipboard-data"></i> MBA Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>GMAC</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>50%+ in Bachelor’s</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>1,800 at NMIMS (30% female)</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹3,000 + taxes</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>Oct–Dec</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>CBT</p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~75,000 annually</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/NMAT-min.jpg" alt="NMAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 6 -->
+    <div class="tab-pane fade" id="SNAP" role="tabpanel"></div>
+    <!-- 7 -->
+    <!-- IBSAT Tab Panel -->
+<div class="tab-pane fade container my-4" id="IBSAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Step into Management with <span>IBSAT</span></h3>
+        <p class="mt-2 mb-0">
+          The ICFAI Business School Aptitude Test (IBSAT) is a gateway to MBA/PGPM programs at 9 IBS campuses across India.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            IBSAT – ICFAI Business School Aptitude Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-clipboard-check"></i> MBA/PGPM Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>ICFAI Foundation</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>50%+ in Bachelor’s, English medium</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Additional:</strong><br>TOEFL/NELT/IELTS if needed</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>Varies across 9 IBS campuses</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹1,800</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>December</p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>Online CBT</p>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~25,000 annually</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/IBSAT-ICFAI-min.jpg" alt="IBSAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 8 -->
+    <!-- IIFT Tab Panel -->
+<div class="tab-pane fade container my-4" id="IIFT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Global Business with <span>IIFT MBA</span></h3>
+        <p class="mt-2 mb-0">
+          IIFT MBA admission uses CAT scores for shortlisting, focusing on diversity and experience for international business programs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            IIFT MBA – Indian Institute of Foreign Trade
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard"></i> MBA in International Business
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Admission:</strong><br>CAT score-based</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Shortlisting:</strong><br>CAT, diversity, experience</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>50% Bachelor’s (45% SC/ST/PwD)</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~400 (Delhi, Kolkata)</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹3,000 (IB), ₹2,000 (BA)</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>Nov/Dec</p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>IIMs</p>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>30,000–50,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/IIFTMBA-min.jpg" alt="IIFT MBA Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 9 -->
+<!-- ATMA Tab Panel -->
+<div class="tab-pane fade container my-4" id="ATMA" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Step into Management with <span>ATMA</span></h3>
+        <p class="mt-2 mb-0">
+          The AIMS Test for Management Admissions (ATMA) is a gateway to MBA, PGDM, and other management programs at 750+ institutes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            ATMA – AIMS Test for Management Admissions
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard"></i> Management Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>AIMS</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>50%+ in Bachelor’s</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Accepted By:</strong><br>750+ institutes</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>Varies by institute</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹2,000</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>Feb, May, Jun, Jul</p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~20,000 annually</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/ATMA-AIMS-min.jpg" alt="ATMA Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 10 -->
+    <!-- ICET Tab Panel -->
+<div class="tab-pane fade container my-4" id="ICET" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Advance Your Career with <span>ICET</span></h3>
+        <p class="mt-2 mb-0">
+          AP & TG ICET are state-level exams for MBA/MCA programs in Andhra Pradesh and Telangana universities and colleges.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            ICET – Integrated Common Entrance Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard"></i> AP & TG ICET Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>AP: Sri Krishnadevaraya Univ.<br>TG: Mahatma Gandhi Univ.</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Bachelor’s (3+ yrs)<br>50% Gen, 45% SC/ST/BC</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>AP: ~37,500<br>TG: ~71,647</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>AP: ₹550–₹650<br>TG: ₹550–₹750</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>AP: May<br>TG: Jun</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>AP: ~45,000<br>TG: ~77,942</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/ICET-min.jpg" alt="ICET Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 11 -->
+ <!-- K-MAT Tab Panel -->
+<div class="tab-pane fade container my-4" id="K-MAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Advance Your Career with <span>K-MAT</span></h3>
+        <p class="mt-2 mb-0">
+          K-MAT, conducted by KPPGCA, is a gateway to MBA, PGDM, and MCA programs in Karnataka.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            K-MAT – Karnataka Management Aptitude Test
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard"></i> Management Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>KPPGCA</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>50%+ in Bachelor’s<br>MCA: Math in 12th</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>~15,000 in Karnataka</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹850</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>September</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~9,000 annually</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/KMAT-min.jpg" alt="K-MAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cacaca;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-hover i {
+    transition: color 0.3s ease;
+  }
+
+  .card-hover:hover i {
+    color: var(--pry-clr, #0d6efd);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .img-zoom-container img {
+    transition: transform 0.4s ease;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.08);
+  }
+
+  .bg-sec-clr {
+    background-color: var(--sec-clr);
+  }
+
+  .bg-light {
+    background-color: #f9f9f9 !important;
+  }
+
+  @media (max-width: 767.98px) {
+    .hero h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+    }
+
+    .img-zoom-container img {
+      max-height: 300px;
+    }
+
+    .card-hover {
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .card {
+      margin-bottom: 1rem;
+    }
+
+    .row.g-4 {
+      gap: 1rem !important;
+    }
+  }
+</style>
+    <!-- 12 -->
+    <div class="tab-pane fade container my-4" id="JIPMAT" role="tabpanel">
+        <section class="container my-4">
+          <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+            <div class="col">
+              <h3>Excel with <span>JIPMAT</span></h3>
+              <p class="mt-2 mb-0">
+                JIPMAT, conducted by NTA, is the gateway to the 5-year Integrated Program in Management at IIM Bodh Gaya and IIM Jammu.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="container my-4">
+          <div class="row">
+            <div class="col-lg-8 mb-4">
+                <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+                <h4 class="text-center text-light fw-bold p-3 m-0">
+                  JIPMAT – Integrated Program in Management
+                </h4>
+              </div>
+              <div class="card p-4 border-0 shadow-sm bg-light rounded">
+                <h5 class="mb-4">
+                  <i class="bi bi-mortarboard"></i> IPM Admission Overview
+                </h5>
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>NTA</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>12th (2023-25), 60%+ (55% SC/ST/PwD)<br>10th (2021+)</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>120 (Bodh Gaya)<br>140 (Jammu)</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹2,000 Gen/OBC<br>₹1,000 SC/ST/PwD</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Month:</strong><br>April</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~10,115 (12,207 reg.)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="img-zoom-container shadow-sm">
+                <img src="./assets/Management & Business/JIPMAT-min.jpg" alt="JIPMAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 13 -->
+    <!-- MICAT Tab -->
+      <div class="tab-pane fade container my-4" id="MICAT" role="tabpanel">
+        <section class="container my-4">
+          <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+            <div class="col">
+              <h3>Excel with <span>MICAT</span></h3>
+              <p class="mt-2 mb-0">
+                MICAT, conducted by MICA, Ahmedabad, is the gateway to PGDM and PGDM-C programs.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="container my-4">
+          <div class="row">
+            <div class="col-lg-8 mb-4">
+                <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+                <h4 class="text-center text-light fw-bold p-3 m-0">
+                  MICAT – MICA Admission Test
+                </h4>
+              </div>
+              <div class="card p-4 border-0 shadow-sm bg-light rounded">
+                <h5 class="mb-4">
+                  <i class="bi bi-mortarboard"></i> PGDM/PGDM-C Admission Overview
+                </h5>
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>MICA, Ahmedabad</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Bachelor’s + CAT/XAT/GMAT</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>180 (PGDM-C)<br>36 (PGDM)</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>₹2,100</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>Dec/Jan</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Mode:</strong><br>CBT</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                      <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>~8,000 annually</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="img-zoom-container shadow-sm">
+                <img src="./assets/Management & Business/MICAT-min.jpg" alt="MICAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- 14 -->
+<!-- CEMAT Tab Panel -->
+<div class="tab-pane fade container my-4" id="CEMAT" role="tabpanel">
+  <!-- Hero Section -->
+  <section class="container my-4">
+    <div class="hero row text-center p-4 shadow-sm rounded" style="background-color: var(--perfect-blue);">
+      <div class="col">
+        <h3>Achieve Your Goals with <span>CEMAT</span></h3>
+        <p class="mt-2 mb-0">
+          CEMAT, conducted by IGNOU, is the gateway to Commonwealth Executive MBA and MPA programs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm mb-3 bg-sec-clr rounded" style="background-color: var(--perfect-blue) !important;">
+          <h4 class="text-center text-light fw-bold p-3 m-0">
+            CEMAT – Commonwealth Executive MBA & MPA
+          </h4>
+        </div>
+
+        <div class="card p-4 border-0 shadow-sm bg-light rounded">
+          <h5 class="mb-4">
+            <i class="bi bi-mortarboard"></i> CEMBA/CEMPA Admission Overview
+          </h5>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Conducted by:</strong><br>IGNOU</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Eligibility:</strong><br>Bachelor’s + 2 yrs exp.<br>Valid CEMAT score</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Seats:</strong><br>Varies by institution</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Application Fee:</strong><br>Tk. 1,000</p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Exam Months:</strong><br>Jun/Dec</p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card card-hover shadow-sm border-0 h-100 p-3 rounded">
+                <p class="mb-0"><i class="bi bi-caret-right-fill"></i> <strong>Appearing:</strong><br>Data unavailable</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mb-4">
+        <div class="img-zoom-container shadow-sm">
+          <img src="./assets/Management & Business/XAT -min.jpg" alt="CEMAT Exam" class="img-fluid rounded mx-auto d-block w-100" style="max-height: 420px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+    <!-- management box end-->
+
+      <!-- info -->
+  <div class="container my-5">
+  <div class="row justify-content-center">
+    
+    <div class="col-lg-10 col-12">
+      <div class="content-box">
+        <h4 class="text-center mb-4">
+          <i class="bi bi-briefcase-fill me-2"></i>Why Choose Management & Business?
+        </h4>
+
+        <p>
+          <i class="bi bi-bar-chart-line"></i>
+          <span><strong>High Demand:</strong> Over 2.5L MBA aspirants target top B-schools yearly via CAT, XAT, CMAT, NMAT, SNAP, JIPMAT.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-trophy"></i>
+          <span><strong>Top Institutes:</strong> Gain entry to IIMs, XLRI, Symbiosis, MICA, ICFAI via 15+ entrance exams.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-lightbulb"></i>
+          <span><strong>Career Paths:</strong> Specialize in Finance, Marketing, HR, Analytics, Entrepreneurship, Digital Business.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-journal-text"></i>
+          <span><strong>Expert Guidance:</strong> Find exam prep, rankings, scholarships at <a href="https://mustknowcolleges.com" target="_blank">MustKnowColleges.com</a>.</span>
+        </p>
+
+        <p>
+          <i class="bi bi-telephone"></i>
+          <span><strong>Start Now:</strong> WhatsApp us at <a href="https://wa.me/919585222121" target="_blank">9585222121</a> to kickstart your career.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .content-box {
+    background-color: #ffffff;
+    border: 1px solid #e3e6e8;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-box h4 {
+    color: #10263D;
+    font-weight: 700;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: start;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-box i {
+    font-size: 1.4rem;
+    color: #10263D;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  .content-box a {
+    color: #10263D;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  @media (max-width: 576px) {
+    .content-box {
+      padding: 1.5rem;
+    }
+
+    .content-box p {
+      font-size: 0.95rem;
+    }
+
+    .content-box i {
+      font-size: 1.2rem;
+      margin-right: 0.75rem;
+    }
+  }
+</style>
+      <!-- info end-->
+      
+
+
+
+
+
+
+<div id="footer"></div>
+ 
+  
+
+
+
+
+
+
+
+
+    <!-- Javascript -->
+
+    <script src="./assets/js/boostrap.js" ></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

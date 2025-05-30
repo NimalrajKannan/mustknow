@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Paths for PCB Students</title>
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    /* Glass Effect Hero */
+    .hero-glass {
+      background: rgba(240, 248, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 3rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-glass h3 {
+      font-size: 2rem;
+      color: #10263D;
+    }
+
+    .hero-glass p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .hero-glass .text-primary {
+      color: #0d6efd !important;
+    }
+
+    /* Tab Navigation */
+    .nav-tabs {
+      flex-row: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 1rem;
+      border: none;
+      width: 100%;
+    }
+
+    .nav-item {
+      margin-bottom: 0.5rem;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #333;
+      padding: 0.75rem;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      text-align: center;
+      min-height: 50px;
+    }
+
+    .nav-link i {
+      font-size: 1rem; /* Base icon size */
+      color: #666;
+    }
+
+    .nav-link:hover {
+      background-color: #f0f0f0;
+      border: 1px solid #dee2e6;
+    }
+
+    .nav-link.active {
+      background-color: #e6f0ff;
+      border: 2px solid #0d6efd;
+      color: #0d6efd;
+    }
+
+    .nav-link.active i {
+      color: #0d6efd;
+    }
+
+    /* Tab Content */
+    .tab-content .tab-pane {
+      padding: 1rem;
+      border: 1px solid #dee2e6;
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .tab-content .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-list li {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .course-list i {
+      color: #0d6efd;
+      margin-right: 0.5rem;
+    }
+
+    .course-list a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .course-list a:hover {
+      color: #0d6efd;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .hero-glass h3 {
+        font-size: 1.5rem;
+      }
+
+      .hero-glass p {
+        font-size: 0.9rem;
+      }
+
+      .nav-link {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .nav-link i {
+        font-size: 1rem; /* Scale icon with text */
+      }
+
+      .course-list li {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-glass {
+        padding: 2rem 1rem;
+      }
+
+      .nav-link {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+      }
+
+      .nav-link i {
+        font-size: 0.9rem; /* Scale icon with text */
+      }
+
+      .course-list li {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header"></div>
+
+  <!-- Hero Section with Glass Effect -->
+  <section class="hero-glass text-center py-5">
+    <h3 class="fw-bold">Career Paths for Students with <span class="text-primary">Physics, Chemistry, Biology</span></h3>
+    <p class="mt-3">Get ahead of the curve and build a solid foundation for your career with the right stream and subject choices.</p>
+    <nav aria-label="breadcrumb" class="d-flex justify-content-center mb-3">
+      <ol class="breadcrumb bg-transparent">
+        <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none" style="color: #10263D;">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">PCB - Career Paths</li>
+      </ol>
+    </nav>
+  </section>
+
+  <!-- Tabbed Course Categories -->
+  <div class="container py-5">
+    <h2 class="text-center mb-4 fw-bold">Complete List of Courses for PCB Students</h2>
+    <ul class="nav nav-tabs flex-row flex-wrap justify-content-center" id="courseTabs" role="tablist">
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link active" id="medical-tab" data-toggle="tab" href="#medical" role="tab" aria-controls="medical" aria-selected="true">
+          <i class="bi bi-heart-pulse"></i> Medical
+        </a>
+      </li>
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link" id="paramedical-tab" data-toggle="tab" href="#paramedical" role="tab" aria-controls="paramedical" aria-selected="false">
+          <i class="bi bi-clipboard-pulse"></i> Paramedical
+        </a>
+      </li>
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link" id="agriculture-tab" data-toggle="tab" href="#agriculture" role="tab" aria-controls="agriculture" aria-selected="false">
+          <i class="bi bi-tree"></i> Agriculture
+        </a>
+      </li>
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link" id="agri-eng-tab" data-toggle="tab" href="#agri-eng" role="tab" aria-controls="agri-eng" aria-selected="false">
+          <i class="bi bi-gear"></i> Agri Eng
+        </a>
+      </li>
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link" id="science-tab" data-toggle="tab" href="#science" role="tab" aria-controls="science" aria-selected="false">
+          <i class="bi bi-flask"></i> Science
+        </a>
+      </li>
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link" id="technology-tab" data-toggle="tab" href="#technology" role="tab" aria-controls="technology" aria-selected="false">
+          <i class="bi bi-cpu"></i> Technology
+        </a>
+      </li>
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link" id="management-tab" data-toggle="tab" href="#management" role="tab" aria-controls="management" aria-selected="false">
+          <i class="bi bi-briefcase"></i> Management
+        </a>
+      </li>
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="false">
+          <i class="bi bi-palette"></i> Design
+        </a>
+      </li>
+      <li class="nav-item col-6 col-sm-4 col-md-3 col-lg-2 mb-2">
+        <a class="nav-link" id="arts-tab" data-toggle="tab" href="#arts" role="tab" aria-controls="arts" aria-selected="false">
+          <i class="bi bi-book"></i> Arts
+        </a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="courseTabsContent">
+      <!-- Medical Courses -->
+      <div class="tab-pane fade show active" id="medical" role="tabpanel" aria-labelledby="medical-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Medical Courses</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./mbbs-page.html">MBBS - Bachelor of Medicine and Bachelor of Surgery</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bvs-page.html">BVSc & AH - Bachelor of Veterinary Science and Animal Husbandry</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bds-page.html">BDS - Dental Surgery</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bhms-page.html">BHMS - Homeopathy</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bams-page.html">BAMS - Ayurveda</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bums-page.html">BUMS - Bachelor of Unani Medicine and Surgery</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bnys-page.html">BNYS - Bachelor of Naturopathy and Yoga</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bsms-page.html">BSMS - Bachelor of Siddha Medicine and Surgery</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Paramedical Courses -->
+      <div class="tab-pane fade" id="paramedical" role="tabpanel" aria-labelledby="paramedical-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Paramedical Courses</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bpt-page.html">BPT - Physiotherapy</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./b-pharm-page.html">B.Pharm - Pharmacy</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./nursing-page.html">BSc Nursing</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bot-page.html">BOT - Occupational Therapy</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./baslp-page.html">BASLP - Audiology & Speech</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BMLT - Lab Technology</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">B.Optom - Optometry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Agriculture & Related Fields -->
+      <div class="tab-pane fade" id="agriculture" role="tabpanel" aria-labelledby="agriculture-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Agriculture & Related Fields</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./agriculture-page.html">Agriculture</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./horticulture-page.html">Horticulture</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./fs-page.html">Fishery Science - B FSc</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./sericulture-page.html">Sericulture</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./forestry-page.html">B.S.C. - Forestry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Agriculture Engineering -->
+      <div class="tab-pane fade" id="agri-eng" role="tabpanel" aria-labelledby="agri-eng-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Agriculture Engineering</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Agriculture Engineering</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Agriculture Information Technology</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Energy Engineering</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Science Courses -->
+      <div class="tab-pane fade" id="science" role="tabpanel" aria-labelledby="science-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Science Courses</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Biotechnology</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Nutrition & Dietetics</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Microbiology</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Genetics</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Environmental Science</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Radiography</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Home Science</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Sports & Exercise Sciences</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Food Science & Tech</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Physics with Material Science</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc - Anthropology</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Technology & Other Fields -->
+      <div class="tab-pane fade" id="technology" role="tabpanel" aria-labelledby="technology-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Technology & Other Fields</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">B.Tech - Earth Science</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">B.Tech - Renewable Energy Engineering</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BTech - Food Technology</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BTech - Dairy Technology</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Bioinformatics (PCMB)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Management & Other Courses -->
+      <div class="tab-pane fade" id="management" role="tabpanel" aria-labelledby="management-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Management & Other Courses</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bsm-page.html">BSM - Bachelor's in Sports Management</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bhmct-page.html">BHMCT - Hotel Management</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">B.A Tourism Administration</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BBA Tourism Management</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BSc/BA - Hotel Management</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">BBA Hospitality Management</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">B.Lib - Library Sciences</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Design & Creative Fields -->
+      <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Design & Creative Fields</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Radio Technician</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Aviation (Cabin Crew, Ground Staff, etc.)</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Fashion Design</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Interior Design</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Jewellery Design</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Fashion Technology</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Theatre Lighting Design</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">Modelling</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Arts & Humanities -->
+      <div class="tab-pane fade" id="arts" role="tabpanel" aria-labelledby="arts-tab">
+        <div class="card p-4">
+          <h5 class="text-center text-primary mb-4">Arts & Humanities</h5>
+          <ul class="list-unstyled course-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="#">B.A. (Hons) in English</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bjmc.html">BJMC - Journalism and Mass Communication</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bjmch.html">BJMC Hons - Journalism</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./llb.html">LLB - Bachelor of Laws</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bped.html">BPEd - Physical Education</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bba.html">BBA - Digital Marketing</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bem.html">BEM - Event Management</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./ba.html">BA - Multimedia</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bsc-animation.html">BSc - Animation</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bsc-data-science.html">BSc - Data Science</a></li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i><a href="./bsc-statistics.html">BSc - Statistics</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./server.js"></script>
+
+  <div id="footer"></div>
+</body>
+</html>
